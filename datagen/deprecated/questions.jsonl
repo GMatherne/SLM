@@ -1,0 +1,26 @@
+{"medium": "email", "prompt": "Write a short email to your landlord asking them to fix a kitchen faucet that's been leaking for a week."}
+{"medium": "reddit", "prompt": "Write a Reddit reply to someone asking whether it's worth upgrading their 3-year-old laptop or just buying a new one."}
+{"medium": "review", "prompt": "Write a review of a small ramen place you went to that was great but had a long wait."}
+{"medium": "message", "prompt": "Write a text to a friend backing out of weekend plans because you're worn out, without making it weird."}
+{"medium": "personal essay", "prompt": "Write a short personal-essay paragraph about a place from your childhood that still feels calming to think about."}
+{"medium": "explanation", "prompt": "Explain to a friend, casually, why their car battery keeps dying in the cold."}
+{"medium": "email", "prompt": "Write an email to a professor asking for a two-day extension on a paper because you were sick."}
+{"medium": "reddit", "prompt": "Write a comment on a thread where someone's asking if they're wrong for skipping a coworker's wedding."}
+{"medium": "review", "prompt": "Write a review of a pair of running shoes that felt great at first but wore out fast."}
+{"medium": "message", "prompt": "Write a message congratulating a friend who just got a new job, that sounds like you actually mean it."}
+{"medium": "explanation", "prompt": "Explain to someone non-technical what a VPN actually does and whether they need one."}
+{"medium": "personal essay", "prompt": "Write a short reflective paragraph about the last time you changed your mind about something you were sure of."}
+{"medium": "email", "prompt": "Write a follow-up email after a job interview that doesn't sound like a template."}
+{"medium": "reddit", "prompt": "Write a reply to someone asking for advice on getting back into reading after years of not."}
+{"medium": "review", "prompt": "Write a review of a budget hotel that was clean and cheap but had thin walls."}
+{"medium": "message", "prompt": "Write a message to a group chat trying to actually pin down a date for dinner when nobody's committing."}
+{"medium": "explanation", "prompt": "Explain to a relative why they keep getting scam texts and what to do about them."}
+{"medium": "personal essay", "prompt": "Write a short paragraph about a small habit you have that you'd be a little embarrassed to admit."}
+{"medium": "feedback", "prompt": "Give a friend feedback on the personal statement they're sending with a grad-school application. It's well-written, but the middle paragraph is generic and could be about anyone."}
+{"medium": "feedback", "prompt": "A coworker asked you to look over their slide deck before a big presentation. It's good, but the one number that actually matters is buried near the end. Tell them."}
+{"medium": "feedback", "prompt": "Someone posted a short story for critique. The premise is strong but the dialogue is stiff. Be honest about it without crushing them."}
+{"medium": "feedback", "prompt": "Reply to a junior teammate asking why their pull request got sent back. Point them at the real issue (they never handled the empty-list case) so they catch it themselves next time."}
+{"medium": "tutoring", "prompt": "A student keeps dropping the negative sign when they distribute in algebra and getting the wrong answer. Help them see where it's going wrong without just doing it for them."}
+{"medium": "tutoring", "prompt": "A friend learning to code is stuck because their function returns the wrong value. Walk them toward the bug by asking what they've already checked, not by handing them the fix."}
+{"medium": "tutoring", "prompt": "Explain the difference between correlation and causation to a high-schooler using an everyday example, without sounding like a textbook."}
+{"medium": "tutoring", "prompt": "Someone studying for the citizenship test keeps mixing up the three branches of government. Give them a way to keep them straight that isn't just 'memorize it'."}

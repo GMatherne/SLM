@@ -1,0 +1,11 @@
+# Scoring-only (runs anywhere, no GPU):
+# The judge/teacher pick a provider by model id, so install the one you use:
+openai>=1.40           # LLM-as-judge / teacher when model id is gpt-*
+anthropic>=0.40        # LLM-as-judge / teacher when model id is claude-*
+requests>=2.31         # Pangram API (when enabled)
+
+# Generation (needs a GPU). Install when you wire up inference:
+# torch
+# transformers>=4.44
+# peft>=0.12
+# accelerate

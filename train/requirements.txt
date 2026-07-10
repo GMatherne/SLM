@@ -1,0 +1,11 @@
+# Install on the GPU box. Unsloth pulls compatible torch/transformers/trl/peft/datasets,
+# so installing it first avoids version conflicts.
+unsloth
+
+# These come in via unsloth, pinned here only for reference / non-Unsloth envs:
+# trl>=0.9
+# peft>=0.12
+# transformers>=4.44
+# datasets
+# accelerate
+# bitsandbytes
