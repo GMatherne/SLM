@@ -1,0 +1,281 @@
+{
+  "aggregate": {
+    "n": 16,
+    "mean_accuracy": 3.25,
+    "mean_info_retention": 63.8,
+    "mean_info_loss": 36.2,
+    "answers_with_errors": 11,
+    "fabrications_total": 12,
+    "answers_with_fabrication": 7
+  },
+  "rows": [
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims water is 'clear but not transparent'; water is transparent to visible light though it does absorb to some extent.",
+        "Attributes the ocean’s blue appearance to blue light 'reflecting off the surface,' rather than primarily being scattered back from within the water; surface reflection mainly reflects sky color.",
+        "Introduces bottom-reflection and viewing-geometry explanations that are irrelevant/misleading for why the ocean looks blue.",
+        "Suggests 'reflection coming back down toward you' when in water, which misrepresents the optical processes involved."
+      ],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Short-wavelength (blue) light is scattered back toward the observer by water (Rayleigh-like scattering), not merely reflected off the surface."
+      ],
+      "rationale": "It gets absorption of longer wavelengths right but replaces the essential scattering mechanism with incorrect reflection explanations and includes misleading statements about transparency and viewing geometry.",
+      "i": 0,
+      "prompt": "Why does the ocean look blue?"
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "Overgeneralizes that vaccines are made from a piece of the virus, ignoring bacterial vaccines, toxoids, and genetic (mRNA/DNA) vaccines.",
+        "States that the polio vaccine uses only certain parts of live viruses; in reality, polio vaccines are either inactivated whole virus (IPV) or live-attenuated whole virus (OPV), not \"parts\" of a live virus."
+      ],
+      "fabrications": [
+        "Claim that the polio vaccine uses only certain parts of live viruses."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "Vaccines can contain weakened (live-attenuated) whole pathogens.",
+        "Vaccines may use bacterial components or toxoids, not just viruses.",
+        "Genetic vaccines (mRNA/DNA) are another mechanism.",
+        "Immune memory (memory B/T cells) underlies long-term protection, not just immediate antibodies."
+      ],
+      "rationale": "Explains the core idea that vaccines train immunity via safe exposure and antibody production, but includes a clear factual error about polio vaccines and omits several important vaccine types and the role of immune memory.",
+      "i": 1,
+      "prompt": "Can you explain how vaccines work?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims Earth rotates clockwise when viewed from above the North Pole; it is counterclockwise.",
+        "States that if a point on the equator faced the Sun, only a small area near it would get sunlight; in reality, half the Earth is illuminated.",
+        "Says the rotation-driven day/night exposure cycle takes about 365 days; it is about 24 hours.",
+        "Suggests the angle of Earth's rotation (axial tilt) changes slightly over the year; the tilt magnitude stays essentially constant while its orientation relative to the Sun changes due to orbit."
+      ],
+      "fabrications": [
+        "Clockwise rotation as seen from above the North Pole.",
+        "Day/night exposure cycle taking about 365 days.",
+        "Only a small equatorial area would receive sunlight in the described scenario."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "Tilt remains essentially fixed in space as Earth orbits the Sun."
+      ],
+      "rationale": "Although it mentions axial tilt causing hemispheric seasons, it includes multiple significant factual errors about rotation direction, illumination, timescales, and the constancy of tilt.",
+      "i": 2,
+      "prompt": "What causes the seasons to change?"
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "5% interest on $100 is $5, not $2.",
+        "The second year's 5% interest on $105 is $5.25, not $3.25.",
+        "Stating \"2 more dollars (105 total)\" is internally inconsistent."
+      ],
+      "fabrications": [],
+      "info_retention": 80,
+      "dropped_points": [],
+      "rationale": "Defines compound interest and why it matters correctly but includes incorrect and inconsistent numerical examples.",
+      "i": 3,
+      "prompt": "Explain what compound interest is and why it matters."
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "States that because the vocal cords are closed, no sound can be made, whereas the hiccup sound is produced by the abrupt closure of the glottis/vocal cords.",
+        "Proposes an incorrect mechanism that tension on the vocal cord muscles causes them to contract again, resulting in a hiccup."
+      ],
+      "fabrications": [
+        "Invented mechanism that vocal cord tension leads to a subsequent contraction producing the hiccup."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "The hic sound results from reflex closure of the glottis/vocal cords during the sudden inhalation."
+      ],
+      "rationale": "It correctly identifies diaphragm spasms and nerve irritation as causes but misdescribes the sound-producing mechanism and adds an unfounded vocal cord tension explanation.",
+      "i": 4,
+      "prompt": "Why do we get hiccups?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "States or implies you should address the message to the router's IP if you don't know the recipient's exact location; in reality the destination IP remains the recipient and routers forward based on that address.",
+        "Claims every device on the Internet has a unique IP address; in practice many devices share a public IP via NAT and some devices can have multiple IPs."
+      ],
+      "fabrications": [],
+      "info_retention": 30,
+      "dropped_points": [
+        "Data is broken into packets with headers containing source/destination information.",
+        "Routers forward packets hop-by-hop using routing tables toward the destination IP, not because the packet is addressed to the router.",
+        "Transport protocols (e.g., TCP) handle reliability, ordering, and retransmission.",
+        "DNS resolves human-readable names to IP addresses before sending.",
+        "Messages are encoded as bits and traverse physical links (Wi‑Fi, Ethernet, fiber)."
+      ],
+      "rationale": "It mentions IP addresses and routers but gives a key misconception about addressing packets to routers and omits core mechanisms like packetization, routing, transport reliability, and DNS.",
+      "i": 5,
+      "prompt": "How does the internet send a message from my computer to another one?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Yeast does not reproduce by creating another cell inside itself; it reproduces primarily by budding.",
+        "Starches do not turn into sugar simply from heating during baking; enzymatic activity (e.g., amylase) converts some starches to sugars before or early in baking, while heat gelatinizes starch and deactivates enzymes.",
+        "Expansion in the oven is not only dependent on yeast consuming sugar; gases also expand with heat and steam contributes, and yeast is killed by heat before sugars typically run out."
+      ],
+      "fabrications": [
+        "Claim that yeast reproduces by creating another yeast cell inside itself.",
+        "Claim that heating turns starches into sugar during baking."
+      ],
+      "info_retention": 80,
+      "dropped_points": [],
+      "rationale": "Correctly cites yeast CO2 and gluten setting but includes multiple factual errors about yeast reproduction, starch-to-sugar conversion by heat, and oversimplifies oven expansion dynamics.",
+      "i": 6,
+      "prompt": "Why does bread rise when you bake it?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 95,
+      "dropped_points": [
+        "Does not explicitly mention the broader spatial scope of climate versus the more local nature of weather."
+      ],
+      "rationale": "The candidate correctly contrasts short-term weather with long-term climate and notes statistical pattern/trend focus, with only a minor omission about spatial scope.",
+      "i": 7,
+      "prompt": "What is the difference between weather and climate?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 70,
+      "dropped_points": [
+        "Emphasis that ANC is most effective at low frequencies",
+        "Explicit mention of signal processing/DSP generating the inverse wave"
+      ],
+      "rationale": "The candidate correctly explains microphones capturing noise and generating an inverse waveform for cancellation and notes frequency limitations, but omits the low-frequency emphasis and DSP aspect and adds a nonessential, imprecise aside about hearing one’s own voice.",
+      "i": 8,
+      "prompt": "How do noise-cancelling headphones work?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "States the difference in feel at the same temperature would be 'very minimal,' which is misleading; the perceived difference is typically pronounced due to much faster heat transfer in metal."
+      ],
+      "fabrications": [],
+      "info_retention": 90,
+      "dropped_points": [],
+      "rationale": "Correctly explains higher thermal conductivity causing faster heat loss from skin, but downplays the magnitude of the perceptual difference.",
+      "i": 9,
+      "prompt": "Why does metal feel colder than wood at the same temperature?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "States that light cannot escape a black hole because it has mass and therefore weight; light is massless, and black holes trap light due to extreme spacetime curvature/escape velocity exceeding light speed.",
+        "Implies any star will collapse into a black hole once fuel runs out; only sufficiently massive stars do so (others become white dwarfs or neutron stars).",
+        "Describes the singularity as 'pure matter with no space between atoms,' which is not accurate; it’s a region where classical physics breaks down and densities/curvatures may diverge, not atoms packed together.",
+        "Says anything 'near enough' to the event horizon will be sucked in forever; in fact, only crossing the event horizon guarantees no escape—objects outside can still escape."
+      ],
+      "fabrications": [
+        "Claim that light cannot escape because it has mass and therefore weight.",
+        "Description of the singularity as 'pure matter with no space between atoms.'"
+      ],
+      "info_retention": 45,
+      "dropped_points": [
+        "Black hole as a region of spacetime where gravity is so strong that not even light can escape, due to spacetime warping (not because light has mass).",
+        "Clear definition of the event horizon as the point-of-no-return boundary.",
+        "Emphasis that black holes form from the collapse of very massive stars.",
+        "Explanation that gravity bends spacetime so drastically that outward paths become impossible."
+      ],
+      "rationale": "Captures some core ideas (formation by stellar collapse, light cannot escape, event horizon mentioned) but contains multiple significant inaccuracies about light, singularity, which stars form black holes, and the event horizon.",
+      "i": 10,
+      "prompt": "Can you explain what a black hole is without the heavy math?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 45,
+      "dropped_points": [
+        "Cutting damages onion cells, allowing previously separated compounds to mix",
+        "Role of enzymes in converting sulfur compounds",
+        "Involvement of sulfur-containing precursors",
+        "Formation of the specific volatile lachrymatory factor (syn-propanethial-S-oxide)"
+      ],
+      "rationale": "The answer correctly states that chopping releases defensive chemicals that irritate eyes and cause tears, but omits the key biochemical mechanism involving cell damage, enzymes, sulfur compounds, and the specific irritant gas.",
+      "i": 11,
+      "prompt": "Why do onions make you cry when you cut them?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claim that it would be extremely difficult or impossible to survive without even one portion of the brain working is incorrect; many people survive with damage or surgical removal of specific regions.",
+        "Assertion of a study where parts of the brain were 'stimulated (or cut off)' during tasks is misleading/incorrect; humans are not subjected to brain regions being 'cut off' during tasks, and the description does not match standard methods like TMS.",
+        "Claim that tasks could not be completed when a 'significant portion of neurons were blocked' is not a standard or accurate description of human neuroscience studies."
+      ],
+      "fabrications": [
+        "Vague but confident reference to a study involving parts of the brain being 'cut off' and neurons being 'blocked' during tasks."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "Neuroimaging evidence shows widespread activity across the brain for various tasks.",
+        "Even at rest, networks like the default mode network are active; not all regions are active simultaneously but most are used over time."
+      ],
+      "rationale": "It correctly states the 10% myth is false and notes that brain damage impairs function, but includes an overstatement about survivability and a fabricated/misleading study claim while omitting key neuroimaging/resting activity evidence.",
+      "i": 12,
+      "prompt": "My textbook says humans only use 10% of their brains. Is that true?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Imprecise mechanism: suggests a previous strike creates an 'existing path' that future separate strikes will preferentially use; ionized channels dissipate quickly and this mainly applies to multiple return strokes within a single flash.",
+        "Speculative example: claims lightning could hit each leg of a tripod 'three times separately,' which is an unsubstantiated, specific scenario.",
+        "Speculative claim: says sparks on a car strike are likely due to discharge going down two separate paths at once, which is not a standard or supported explanation."
+      ],
+      "fabrications": [
+        "The 'each leg of a tripod three times separately' example is an invented specific without evidence.",
+        "The claim that car-strike sparks are 'chances are' due to two separate paths at once is an unsupported assertion."
+      ],
+      "info_retention": 70,
+      "dropped_points": [
+        "Explanation that multiple return strokes in a single lightning flash can hit the same place due to the ionized channel.",
+        "Context that certain locations/structures (e.g., high lightning activity areas, towers) are particularly prone to repeated strikes beyond just being tall."
+      ],
+      "rationale": "It correctly states the myth is false and that tall objects can be hit multiple times, but includes speculative examples and an oversimplified mechanism while omitting key context about multiple return strokes and location factors.",
+      "i": 13,
+      "prompt": "A friend told me lightning never strikes the same place twice. Is that accurate?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 70,
+      "dropped_points": [
+        "Emphasize emotional stakes and why science matters personally beyond surface interest",
+        "Encourage vivid, concrete storytelling or sensory detail to show rather than tell"
+      ],
+      "rationale": "The candidate correctly advises adding specific experiences and a stronger hook but misses explicit emphasis on emotional stakes and vivid storytelling, and introduces an unwarranted MIT-specific angle.",
+      "i": 14,
+      "prompt": "Here's the opening of my college essay: \"Ever since I was young, I have always loved science because it is very interesting and fun.\" How can I make it stronger?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 55,
+      "dropped_points": [
+        "Libraries address a broad range of critical community needs beyond lending and basic internet access",
+        "Role as community hubs and safe, inclusive public spaces",
+        "Access to curated information resources, research databases, and librarian expertise",
+        "Support for education, job searching, small business, and civic engagement",
+        "Provision of digital collections (e-books, audiobooks) and specialized services (accessibility, youth programs)"
+      ],
+      "rationale": "Accurate but narrow, focusing mainly on bridging the digital divide and tech literacy while omitting other essential modern library functions and community roles.",
+      "i": 15,
+      "prompt": "Make the case that public libraries are still essential in the digital age."
+    }
+  ]
+}

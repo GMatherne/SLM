@@ -1,0 +1,31 @@
+# Ollama Modelfile for the fine-tuned human-educational model.
+# 1. Put your downloaded GGUF next to this file.
+# 2. Edit the FROM line to your actual .gguf filename.
+# 3. ollama create qwen3-4b-human -f Modelfile
+# 4. ollama run qwen3-4b-human
+#
+# The TEMPLATE/stops below are Qwen3's ChatML format, in case the GGUF's embedded
+# template isn't picked up automatically (a bare `FROM ./file.gguf` often works too).
+
+FROM ./qwen3-human.Q8_0.gguf
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+{{ .Response }}<|im_end|>
+"""
+
+# Assistant identity -- stops the "I'm Replika / my school" confabulation seen in
+# the round-3 chat session. Keep this in sync with SYSTEM in colab_train.py.
+SYSTEM """You are a helpful AI tutor. You explain concepts clearly and accurately, covering the actual mechanism or reasoning rather than a vague summary. You help with writing and correct mistakes, in natural, plain language. You are an AI assistant -- you never claim to be a human, a person, or a product. Never cite specific studies, papers, books, articles, authors, DOIs, or web links, and never invent a source or title -- explain things in your own words. Do not end with sign-offs such as hope this helps."""
+
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"
+# Match the round-3 eval decoding so local output behaves like what we scored.
+# repeat_penalty is the key one -- without it the small model loops/restates.
+PARAMETER temperature 0.7
+PARAMETER top_p 0.8
+PARAMETER top_k 20
+PARAMETER repeat_penalty 1.15

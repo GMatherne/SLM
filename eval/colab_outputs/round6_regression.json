@@ -1,0 +1,131 @@
+{
+  "aggregate": {
+    "n": 12,
+    "mean_base_follows": 0.83,
+    "mean_tuned_follows": 0.58,
+    "regressions": 5,
+    "register_bleed": 6
+  },
+  "rows": [
+    {
+      "base_follows": 0,
+      "tuned_follows": 1,
+      "register_bleed": false,
+      "rationale": "BASE is unfinished prose without valid code; TUNED provides code but incorrectly returns True for n <= 1.",
+      "i": 0,
+      "prompt": "Write a Python function is_prime(n) that returns True if n is prime.",
+      "category": "coding",
+      "regression": false
+    },
+    {
+      "base_follows": 0,
+      "tuned_follows": 0,
+      "register_bleed": true,
+      "rationale": "Neither answer provides the correct bare number 391; the base is incoherent and incomplete, and the tuned is chatty and lacks a final numeric answer.",
+      "i": 1,
+      "prompt": "What is 17 times 23? Give just the number.",
+      "category": "arithmetic",
+      "regression": false
+    },
+    {
+      "base_follows": 2,
+      "tuned_follows": 1,
+      "register_bleed": false,
+      "rationale": "The base answer is a single accurate sentence, while the tuned answer is one sentence but inaccurately changes “in the spring” to “next year.”",
+      "i": 2,
+      "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.",
+      "category": "summarize",
+      "regression": true
+    },
+    {
+      "base_follows": 2,
+      "tuned_follows": 0,
+      "register_bleed": true,
+      "rationale": "The base answer is a bare JSON array of three color strings, while the tuned answer is chatty prose with extra content and not the required JSON format.",
+      "i": 3,
+      "prompt": "Return the three primary colors as a JSON array of strings, nothing else.",
+      "category": "format",
+      "regression": true
+    },
+    {
+      "base_follows": 2,
+      "tuned_follows": 0,
+      "register_bleed": true,
+      "rationale": "Base answer supplies the correct one-word capital, whereas the tuned answer adds extraneous chatty text, violating the one-word constraint.",
+      "i": 4,
+      "prompt": "In one word, what is the capital of Japan?",
+      "category": "terse",
+      "regression": true
+    },
+    {
+      "base_follows": 0,
+      "tuned_follows": 0,
+      "register_bleed": true,
+      "rationale": "The base answer is an unfinished chain-of-thought rather than a one-sentence professional email, and the tuned answer is a multi-sentence, chatty email that doesn’t specifically move Friday’s meeting to Monday.",
+      "i": 5,
+      "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.",
+      "category": "register",
+      "regression": false
+    },
+    {
+      "base_follows": 0,
+      "tuned_follows": 1,
+      "register_bleed": false,
+      "rationale": "The base answer is not a two-line couplet at all, while the tuned answer has exactly two lines about the sea but the line endings (reach/speak) do not rhyme.",
+      "i": 6,
+      "prompt": "Write a two-line rhyming couplet about the sea.",
+      "category": "creative",
+      "regression": false
+    },
+    {
+      "base_follows": 0,
+      "tuned_follows": 0,
+      "register_bleed": false,
+      "rationale": "The base answer rambles about different times and never gives an end time, while the tuned answer miscalculates and concludes 11:59 pm instead of 9:00 pm; its explanatory tone isn’t inappropriate for the task.",
+      "i": 7,
+      "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?",
+      "category": "reasoning",
+      "regression": false
+    },
+    {
+      "base_follows": 2,
+      "tuned_follows": 1,
+      "register_bleed": false,
+      "rationale": "The base answer gives a correct one-sentence definition, while the tuned answer is one sentence but adds a misleading 'mass' claim (e.g., places don’t have mass), making the definition only partially correct.",
+      "i": 8,
+      "prompt": "Explain what a noun is in exactly one sentence.",
+      "category": "constraint",
+      "regression": true
+    },
+    {
+      "base_follows": 0,
+      "tuned_follows": 0,
+      "register_bleed": true,
+      "rationale": "Both responses fail to give the bare year '1989' and include extraneous, incorrect explanatory content; the tuned answer is chatty and first-person.",
+      "i": 9,
+      "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?",
+      "category": "constraint",
+      "regression": false
+    },
+    {
+      "base_follows": 0,
+      "tuned_follows": 2,
+      "register_bleed": false,
+      "rationale": "Base table has wrong moon counts, while the tuned answer includes a correct markdown table with Mercury 0 and Earth 1 and the extra text does not violate the requirement.",
+      "i": 10,
+      "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.",
+      "category": "format",
+      "regression": false
+    },
+    {
+      "base_follows": 2,
+      "tuned_follows": 1,
+      "register_bleed": true,
+      "rationale": "The base gives the correct one-word answer, while the tuned answer adds chatty explanations and first-person commentary, violating the one-word constraint.",
+      "i": 11,
+      "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.",
+      "category": "classify",
+      "regression": true
+    }
+  ]
+}

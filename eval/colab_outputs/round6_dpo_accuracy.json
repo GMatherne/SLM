@@ -1,0 +1,304 @@
+{
+  "aggregate": {
+    "n": 16,
+    "mean_accuracy": 2.88,
+    "mean_info_retention": 55.6,
+    "mean_info_loss": 44.4,
+    "answers_with_errors": 15,
+    "fabrications_total": 11,
+    "answers_with_fabrication": 6
+  },
+  "rows": [
+    {
+      "accuracy": 2,
+      "errors": [
+        "States that deep water appears greenish due to absorption of reds; in pure deep ocean water the color is predominantly blue, while greenish hues usually come from phytoplankton/particles, not just depth.",
+        "Attributes the ocean's blue color to a cognitive effect of seeing more surface area and the brain 'assuming' blueness, which is not the physical cause."
+      ],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Shorter-wavelength (blue) light is scattered more effectively by water (Rayleigh-like scattering).",
+        "Scattered blue light is redirected back toward the observer, making the ocean appear blue."
+      ],
+      "rationale": "While it notes preferential absorption of reds, it misses the essential scattering mechanism and adds incorrect explanations about green color and a brain-based surface-area assumption.",
+      "i": 0,
+      "prompt": "Why does the ocean look blue?"
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "Says vaccines 'do NOT make you immune,' which is false; many vaccines can confer strong or even sterilizing immunity, though none are 100% effective.",
+        "States vaccines contain 'something that causes disease,' which is misleading; most vaccines use weakened/inactivated pathogens or components/toxoids that are designed not to cause disease."
+      ],
+      "fabrications": [],
+      "info_retention": 70,
+      "dropped_points": [
+        "Vaccines introduce a safe form of the pathogen (weakened/inactivated, subunits, genetic material, or toxoid) to train the immune system.",
+        "Emphasis that vaccination prepares immunity before real exposure, using safe stimulants rather than disease-causing agents."
+      ],
+      "rationale": "Explains antibodies, memory, faster response, and reduced severity well but mischaracterizes vaccine contents and incorrectly claims vaccines do not make you immune.",
+      "i": 1,
+      "prompt": "Can you explain how vaccines work?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Saying a hemisphere will 'always face away from the sun' during winter is imprecise; due to Earth's rotation, no entire hemisphere faces away continuously—winter results from being tilted away, causing lower sun angles and shorter days."
+      ],
+      "fabrications": [],
+      "info_retention": 90,
+      "dropped_points": [
+        "Does not explicitly mention that the tilt stays fixed in space as Earth orbits, leading each hemisphere to alternate being tilted toward/away from the Sun.",
+        "Does not clarify that seasons are due to changes in sun angle and day length rather than simple 'facing toward/away'."
+      ],
+      "rationale": "It correctly identifies axial tilt as the cause and implies orbital progression, but uses imprecise phrasing about hemispheres 'always facing away' and omits clarifying details about fixed tilt and sunlight angle/day length.",
+      "i": 2,
+      "prompt": "What causes the seasons to change?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "States 'Each new deposit earns as much interest as everything before it,' which misrepresents compounding; interest accrues on the total balance and prior interest earns interest, but a new deposit does not earn interest on past deposits' interest retroactively.",
+        "Claims 'We don't get charged anything for the first dollar we borrow,' which is false; interest is charged on the entire principal from the start.",
+        "Implies that the marginal interest per extra dollar increases simply because the total borrowed is larger; at a fixed rate, interest per dollar is proportional, not an increasing rate per additional dollar."
+      ],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Clear definition that compound interest is interest earned on both the original principal and on previously accumulated interest (interest-on-interest)."
+      ],
+      "rationale": "It gestures at exponential growth and relevance to loans but misstates key mechanisms and lacks a clear, correct definition of compound interest.",
+      "i": 3,
+      "prompt": "Explain what compound interest is and why it matters."
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "States that hiccups send air into the stomach through the esophagus; in reality, the sudden diaphragmatic contraction draws air into the lungs and the glottis closure produces the hic sound.",
+        "Claims stomach expansion irritates nerves in a way that stops the spasms; this mechanism is unsupported and backwards.",
+        "Asserts hiccups occur most often when you're full after eating; fullness can be a trigger but 'most often' is an overgeneralization.",
+        "Says hiccups usually last only seconds at a time; bouts commonly last minutes, with individual hic events seconds apart.",
+        "Advises seeing a doctor if hiccups persist beyond 24 hours; standard threshold for persistent hiccups is typically 48 hours."
+      ],
+      "fabrications": [
+        "Air goes into the stomach through the esophagus during hiccups.",
+        "Stomach expansion irritates nerves to stop the hiccup spasms."
+      ],
+      "info_retention": 35,
+      "dropped_points": [
+        "Air rushes through the trachea with glottis closure producing the hic sound.",
+        "Irritation/overstimulation of the vagus or phrenic nerves is involved.",
+        "Hiccups are an involuntary reflex of the diaphragm."
+      ],
+      "rationale": "Identifies diaphragmatic spasms but misdescribes the airflow and mechanism, overgeneralizes triggers, gives misleading duration/clinical threshold, and omits the key nerve involvement and glottic closure explanation.",
+      "i": 4,
+      "prompt": "Why do we get hiccups?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Implies the two computers talk directly to each other rather than communicating through multiple intermediate routers.",
+        "Suggests both computers need to use DNS to know each other's location, whereas typically only the sender resolves a domain name to an IP address."
+      ],
+      "fabrications": [],
+      "info_retention": 55,
+      "dropped_points": [
+        "Message is split into packets and later reassembled.",
+        "Packets travel hop-by-hop through routers based on routing tables.",
+        "Reliability mechanisms (e.g., TCP acknowledgments, retransmissions, ordering) and error checking.",
+        "Explicit mention that data is encoded as bits sent over physical links."
+      ],
+      "rationale": "The answer correctly mentions TCP/IP, DNS, and IP packets with addressing, but it omits routing, reliability, and reassembly details and contains minor inaccuracies about direct communication and DNS use.",
+      "i": 5,
+      "prompt": "How does the internet send a message from my computer to another one?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims gas is trapped because of starches and sugars rather than primarily the gluten network.",
+        "Asserts the dough expands until it bursts and the bread falls out of its container, which is incorrect.",
+        "States bread without yeast will not rise at all, ignoring chemical leaveners and steam-based leavening."
+      ],
+      "fabrications": [
+        "Dough bursting and falling out of its container during baking.",
+        "Starches and sugars acting as the primary net that traps gas."
+      ],
+      "info_retention": 40,
+      "dropped_points": [
+        "Gluten network elasticity is what traps CO2 and allows expansion.",
+        "Heat in the oven causes gases (CO2, steam) to expand further (oven spring) and sets the structure.",
+        "Physical setting of starch and proteins during baking stabilizes the risen shape."
+      ],
+      "rationale": "Mentions yeast producing CO2 but misattributes gas trapping, includes a nonsensical bursting claim, omits heat/gluten roles, and wrongly says non-yeast breads cannot rise.",
+      "i": 6,
+      "prompt": "Why does bread rise when you bake it?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "States climate is over longer periods of time (months/years); climate is typically characterized over decades (about 30 years), not merely months."
+      ],
+      "fabrications": [],
+      "info_retention": 85,
+      "dropped_points": [
+        "Climate is defined by long-term averages, extremes, and trends, not just longer periods.",
+        "Timeframe should emphasize decades (typically ~30 years), not months."
+      ],
+      "rationale": "The answer correctly contrasts short-term weather with longer-term climate and gives apt examples, but it understates climate’s timescale by including months and omits mention of long-term averages/trends.",
+      "i": 7,
+      "prompt": "What is the difference between weather and climate?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Implies eardrum can move by 1 cm, which is physically impossible (actual displacements are microscopic).",
+        "Claims the effects cancel out completely with no vibrations left, overstating ANC effectiveness.",
+        "Suggests the anti-noise is 'very quiet,' which is misleading; its amplitude must match the unwanted noise at the ear to cancel."
+      ],
+      "fabrications": [
+        "Eardrum moving 1 cm."
+      ],
+      "info_retention": 40,
+      "dropped_points": [
+        "Use of microphones to detect external noise.",
+        "Use of signal processing/DSP to generate the inverse waveform.",
+        "ANC is most effective at low frequencies.",
+        "ANC reduces noise but does not eliminate it completely."
+      ],
+      "rationale": "Captures the inverse-wave idea but omits microphones/DSP and low-frequency focus, and includes significant exaggerations about eardrum motion and total cancellation.",
+      "i": 8,
+      "prompt": "How do noise-cancelling headphones work?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Imprecise claim that the body and object reach the same temperature (full equilibrium) during touch, which typically doesn’t occur in practice."
+      ],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "Correctly explains that higher thermal conductivity in metal causes faster heat loss from the skin, making it feel colder, with only a minor imprecision about reaching equilibrium.",
+      "i": 9,
+      "prompt": "Why does metal feel colder than wood at the same temperature?"
+    },
+    {
+      "accuracy": 1,
+      "errors": [
+        "Uses an irrelevant two-ball scenario and incorrect Newtonian setup to explain black holes.",
+        "Incorrect force expressions (e.g., F = G*m1*2m / r^2 and F = GM/r'^2 * M/(r' - d)) are nonsensical or dimensionally inconsistent.",
+        "Equates gravitational acceleration to v^2/r' as if defining escape velocity; that relation describes circular orbital speed, not escape speed.",
+        "Asserts that making the object smaller makes the escape speed become imaginary, which is false; the classical condition is escape speed exceeding the speed of light.",
+        "Confuses net outward force with escape conditions; escape velocity > 0 does not imply a net outward force."
+      ],
+      "fabrications": [
+        "Claim that the escape speed becomes imaginary at the Schwarzschild radius.",
+        "Equation GM/(r')^2 = v^2/r' presented as the escape condition.",
+        "Force formula F = GM/r'^2 * M/(r' - d) without basis."
+      ],
+      "info_retention": 20,
+      "dropped_points": [
+        "Definition that a black hole is a region from which not even light can escape",
+        "Explanation of the event horizon",
+        "Formation from the collapse of massive stars",
+        "Mention of the singularity (or extreme density) at the center",
+        "Conceptual emphasis on spacetime curvature/warping rather than flawed Newtonian derivations"
+      ],
+      "rationale": "The response provides a flawed, math-heavy and incorrect derivation with multiple physics errors and omits key conceptual elements like light inescapability, event horizon, formation, and spacetime warping.",
+      "i": 10,
+      "prompt": "Can you explain what a black hole is without the heavy math?"
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "States that enzymes react with sugars; the key reaction is between enzymes and sulfur-containing amino acid sulfoxides, not sugars.",
+        "Refers to the irritant as 'propanethial sulfoxide' rather than the correct 'propanethial S-oxide' (syn-propanethial-S-oxide)."
+      ],
+      "fabrications": [],
+      "info_retention": 70,
+      "dropped_points": [
+        "Correct identification of sulfur-containing compounds as the substrate for the enzymes",
+        "Accurate naming of the irritant as syn-propanethial-S-oxide (propanethial S-oxide)"
+      ],
+      "rationale": "The core mechanism—cell damage leading to an enzyme-driven reaction producing an irritating gas that causes tears—is described, but it incorrectly names sugars as the substrate and mislabels the gas.",
+      "i": 11,
+      "prompt": "Why do onions make you cry when you cut them?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Implying the 'other 90%' is just used less is misleading; most brain regions are engaged depending on task and state rather than there being a large underused portion.",
+        "Claiming Huntington's disease creates cortical 'gaps' that surrounding cells grow into is inaccurate; neurodegeneration leads to atrophy and gliosis, not surrounding neurons filling space.",
+        "Using the term 'paracortex' to describe extra or regrown cerebral cortex is incorrect; 'paracortex' is a lymph node region and not a recognized brain term."
+      ],
+      "fabrications": [
+        "Use of 'paracortex' as a brain term implying extra cortex.",
+        "Assertion that surrounding cells grow into vacated cortical space in Huntington's disease."
+      ],
+      "info_retention": 25,
+      "dropped_points": [
+        "Neuroimaging shows widespread activity across the brain during many tasks.",
+        "Damage to any brain area typically causes loss of related functions, indicating regions are used.",
+        "Even at rest, networks like the default mode network are active.",
+        "Clarification that no part of the brain is entirely unused."
+      ],
+      "rationale": "While it correctly states the 10% claim is a myth, it introduces inaccurate and fabricated details about brain pathology and omits key evidence supporting why the myth is false.",
+      "i": 12,
+      "prompt": "My textbook says humans only use 10% of their brains. Is that true?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims humans 'aren't conductors' and that this is why we aren’t struck often; human bodies are conductive and can be struck by lightning.",
+        "Unsafe/misleading pool advice: suggests staying in the pool and keeping feet dry; correct guidance is to get out of the water and seek shelter.",
+        "Asserts 'If the water is still moving then do not jump out into the rain' due to ground charge; this is misleading and not standard safety guidance."
+      ],
+      "fabrications": [
+        "The claim about moving water meaning you shouldn't get out 'into the rain' because the ground could have a charge is an invented, nonstandard mechanism/guideline."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "Explicitly noting that a single lightning event can involve multiple return strokes to the same point.",
+        "Noting that certain locations/regions (e.g., high lightning activity areas) and especially tall structures are more prone to repeated strikes; only tall objects were briefly mentioned."
+      ],
+      "rationale": "It correctly states lightning can strike the same place multiple times but includes multiple factual and safety errors that reduce overall accuracy.",
+      "i": 13,
+      "prompt": "A friend told me lightning never strikes the same place twice. Is that accurate?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Refers to a 'second sentence' when only one sentence was provided."
+      ],
+      "fabrications": [],
+      "info_retention": 40,
+      "dropped_points": [
+        "Lack of specific, concrete examples or anecdotes to replace the generic claim",
+        "Does not suggest sensory detail or vivid scene-setting",
+        "Does not articulate personal emotional stakes or why science matters to the writer specifically",
+        "No actionable rewrite or template to model a stronger opening",
+        "Does not emphasize specificity beyond general advice"
+      ],
+      "rationale": "The candidate offers generally sound high-level advice about showing identity and impact but makes a factual slip about the number of sentences and misses key actionable guidance like concrete examples, vivid detail, emotional stakes, and a model rewrite.",
+      "i": 14,
+      "prompt": "Here's the opening of my college essay: \"Ever since I was young, I have always loved science because it is very interesting and fun.\" How can I make it stronger?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 60,
+      "dropped_points": [
+        "Free access to diverse information resources beyond computers (books, e-books, databases, media)",
+        "Guidance from librarians in research, information literacy, and combating misinformation",
+        "Privacy protections and equitable access to government/civic services (printing, forms, applications)",
+        "Early literacy, youth programs, and lifelong learning support",
+        "Workforce development support (job search, resumes) and access to specialized tools (makerspaces, equipment)",
+        "Community resilience roles, cultural programming, and preservation of local history/archives"
+      ],
+      "rationale": "Accurate and persuasive on digital access, literacy training, and community space, but omits several core modern library roles such as professional guidance, e-resources, privacy, youth programs, workforce support, and civic/cultural functions.",
+      "i": 15,
+      "prompt": "Make the case that public libraries are still essential in the digital age."
+    }
+  ]
+}

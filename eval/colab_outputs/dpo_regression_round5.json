@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "Write a Python function is_prime(n) that returns True if n is prime.",
+    "output": "The most efficient way of doing this is by testing all numbers from 2 up to sqrt(n). If none of them divide evenly into n then we know it's prime.\n\ndef is_prime(x):\n    for i in range(2,int(sqrt(x))+1): # +1 so as not to miss last iteration\n        if x%i ==0:\n            return False\n    else: \n        return True\n\nNote: This will fail on very large primes (e.g. 982451653) because float precision issues mean that sqrt() may return something slightly too low.\nIf you want to avoid these issues use int(math.sqrt()) instead:\n\nimport math\n\ndef isprime(x):\n   for i range(1,int(math.sqrt(x)+1)):\n       if x % i == 0:\n           return False  \n   else:\n       return True"
+  },
+  {
+    "prompt": "What is 17 times 23? Give just the number.",
+    "output": "401\n\nIf you want to know how I got that answer:\n\nMultiply by place values:\n(10+7) * (20+3)\n= 10*20 + 15*2 + 7*3\n= 200 +30 +21\n=400+51 = 451"
+  },
+  {
+    "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.",
+    "output": "The city council approved a bike lane plan after a heated debate that lasted for months."
+  },
+  {
+    "prompt": "Return the three primary colors as a JSON array of strings, nothing else.",
+    "output": "[\"red\", \"blue\", \"yellow\"]"
+  },
+  {
+    "prompt": "In one word, what is the capital of Japan?",
+    "output": "Tokyo. It's also known as Tokyo Metropolis (or Greater Tokyo Area), but that's just an extension of its name.\n\nThe term \"capital\" can be misleading here: it doesn't mean that there's only one capital city for all of Japan - instead, it means that this particular city holds the official status of being the seat of government; i.e., where most of the offices of national importance are located. Other major cities like Osaka or Kyoto have been historically important and are still significant today, but they don't hold any formal governmental status."
+  },
+  {
+    "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.",
+    "output": "Hi [Name], I hope you're well! Unfortunately I have another meeting scheduled on Friday at 2pm, so could we move our discussion to Monday? Let me know if that works for you - thanks! Best wishes, [Your Name]"
+  },
+  {
+    "prompt": "Write a two-line rhyming couplet about the sea.",
+    "output": "The waves crash against the shore, \nThey roll back as the tide returns."
+  },
+  {
+    "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?",
+    "output": "1 hour is 60 minutes so we know that 120 - 13 = 19\n\nNow add on the hours.\n\nThe movie started at 8pm (1 hour after 7) which means the movie will end at 11pm (4 hours after 8)\n\nAdd those two numbers together and get your answer of 1:19 am"
+  },
+  {
+    "prompt": "Explain what a noun is in exactly one sentence.",
+    "output": "A noun is a word that refers to something that can be talked about (a thing, idea, place, person). For example: \"I have a cat\" uses two nouns - 'cat' and 'me'. The verb here is 'have'."
+  },
+  {
+    "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?",
+    "output": "1989\n\nThe exact date was November 9th. However, it took several days for news of this to reach the West, so the popular consensus is that the wall fell in '89.\n\nIt should also be noted that the Berlin wall was not built by the East German government alone. The Soviet Union, France, Britain and other Western countries supported its construction as part of their strategy to prevent the spread of communism into western Europe during the Cold War. They had previously been reluctant to allow the spread communism in Eastern Europe following World War II, but were forced to accept the situation after the Hungarian uprising (and subsequent invasion) in 1956. It is worth noting that the USSR's support for the wall was quite limited; they only provided the troops needed to guard the border between Czechoslovakia and Poland at first, and the wall itself wasn't even allowed across the Polish border until the summer of 1789."
+  },
+  {
+    "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.",
+    "output": "|Planet|Moons|\n|---|---|\n|Mercury|| \n|Earth|1|"
+  },
+  {
+    "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.",
+    "output": "negative\n\nThe use of the words \"cold\" and \"slow\" implies that both the food and the staff were not satisfactory for the reviewer.\n\nIt's worth noting that the statement is grammatically incorrect because it lacks a subject: there is no clear noun that can take on the verb \"was\". This might mean that the reviewer didn't realize their mistake while writing the comment but it could also indicate that they're too busy criticizing the restaurant to bother fixing their grammar. In either case, we should assume that the sentence means what it says."
+  }
+]

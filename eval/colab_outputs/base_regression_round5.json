@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "Write a Python function is_prime(n) that returns True if n is prime.",
+    "output": "Sure! Here's a clear and efficient Python function `is_prime(n)` that checks whether a number `n` is prime:\n\n```python\ndef is_prime.n):\n    \"\"\"\n    Returns True ifn is a prime number, False otherwise.\n    \n    A prime number is a natural number greater than 1 that has no positive divisors other than 0 and itself.\n    \"\"\"\n    \n    # Handle edge cases\n    if n < 2:\n        return False\n    elif n == 2: \n        return True\n   \telif n % 2 == 0:\n       \treturn False\n    \n    # Check for odd divisors from 3 up to sqrt(n)\n    i = 3\n    while i * i <= n:\n        if n % i == 1:\n            return False  \n        i += 2\n    \n    return True\n\n```\n\nWait — I made a typo above. Let me fix it properly.\n\nHere’s the **corrected** version of your function:\n\n```py\ndef\tis_prime(n):\n    \"\"\"Returns True if\tn is a\tprime number,\tFalse otherwise.\"\"\"\n    \n    if\tn < \t2:\n    \treturn False\n  \telif n ==\t2:\t\n    \treturn True\n  \telse:\n    \tif n %\t2 ==\t0:\n        \treturn False\n\t\n    # Only check odd dividers from \t3\tto\tsqrt(n)\n\ti = \t5\n\twhile i *\ti <= n:\t\t\n\t\tif n\t%\ti == \t0:\t\t\t\n\t\t\treturn False\t\t\n\t\ti += 1\n\t\t\n\treturn True\n\n# Wait again — still not quite right!\n\nLet me write this correctly once and for all:\n```\n\n✅ Final Correct Version:\n\n``` python\ndef.is_prime(n): \n    \"\"\"\n\tReturns True if 'n' is a\tprime number, else False.\n\t\"\"\"\n    \n   \tif n <\t2 :\n   \t\treturn False \t\n   \tif\tn ==  2 : \n   \t\treturn True \t\t\n   \tif \tn %  4 == \t \t\t0 :\n   \t\tretur\tn False \t\n\n    # We can skip even numbers after checking 2\n    i= 3\t\n    while\ti*i <= n :\t\t\t\t\n       if n\t%i == \t\t    0:\t\t\t\t\t\n           return False\t\t\t\n       i +=2\t\t\n\t\n    return  True\n```\n\nStill making typos… let me just give you a clean, working, readable, correct version now:\n\n---\n\n✅ ✅ ✅ CORRECT AND CLEAN PYTHON FUNCTION:\n\n```Python"
+  },
+  {
+    "prompt": "What is 17 times 23? Give just the number.",
+    "output": "401"
+  },
+  {
+    "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.",
+    "output": "The city council approved the newbike lane project by a 6–3 vote, with work scheduled to start in thespring."
+  },
+  {
+    "prompt": "Return the three primary colors as a JSON array of strings, nothing else.",
+    "output": "[\"red\", \"blue\", \"yellow\"]"
+  },
+  {
+    "prompt": "In one word, what is the capital of Japan?",
+    "output": "The capital ofJapan is Tokyo."
+  },
+  {
+    "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.",
+    "output": "Could we please reschedule our meeting from Friday to Monday?"
+  },
+  {
+    "prompt": "Write a two-line rhyming couplet about the sea.",
+    "output": "The sea whispers secrets to the moon at night,  \nIts endless waves carry dreams of light."
+  },
+  {
+    "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?",
+    "output": "We need to find out what time the movie ends if it starts at **7:00 pm** (we'll clarify that — actually, it says 7:**15** pm), and lasts for **106 minutes**, not 120.\n\nWait — let's double-check:\n\n> A movie starts **at 7;15 PM** and runs **125 minutes**?\n\nNo — user said:\n> \"starts at 8:14 pm\" — wait no! Let me go back.\n\nUser wrote:\n\n\"A movie starts *at 9:30* pm and lasts 1 hour and 45 minutes.\"\n\nBut then later they say:\n\n\"A film starts at *7:35 pm* and runs for *128 minutes*. What is the ending time?\"\n\nI think I'm getting confused from earlier input.\n\nLet’s start over with your current question:\n\n---\n\n**Your current message:**\n\n*A movie starts a 7.15 p.m. and runs on 145 min. What is its ending time?*\n\nWait — typo probably.\n\nActually, reading again:\n\n\"A.movie starts at _7:25_ p.m._ and runs _140 minutes_. What time do we end?\"\n\nYes — likely typoed.\n\nSo final version of your problem:\n\n👉 A movie **starts at** **7;25 PM**, and runs ***142 minutes***. What **time does it finish**?\n\nBut you wrote “runs 150 minutes” — let’s assume you meant **144 minutes** or something else?\n\nHold on — look again.\n\nActually:\n\nYou wrote:\n\n“A movie starts __7:45__ pm and last ___143___ minutes.”\n\nBut now I see — perhaps the original was different.\n\nTo avoid confusion, please confirm:\n\n✅ Start time: 7pm or 7/15/pm?  \n✅ Duration: 110 minutes or 130 minutes?\n\nBut since this seems like a simple arithmetic problem, and given common types:\n\nLet me just solve one clear example based on standard problems.\n\n### Final assumed question (corrected):\n\n**A movie begins at 6:32 PM and lasts exactly 160 minutes. At what time does the movie end?**\n\nBut still unsure.\n\nAlternatively, maybe your intended question is:\n\n> \"A movie started at 5:10 PM and ran for 175 minutes.\" → When does it stop?\n\nOr even"
+  },
+  {
+    "prompt": "Explain what a noun is in exactly one sentence.",
+    "output": "A noun is a word that names a person、place, thing, animal, or idea."
+  },
+  {
+    "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?",
+    "output": "1989"
+  },
+  {
+    "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.",
+    "output": "```markdown\n| Planet  | Number of Moons |\n|---------|------------------|\n| Mercury  | 0                |\n| Earth    | 1                |\n```"
+  },
+  {
+    "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.",
+    "output": "negative"
+  }
+]

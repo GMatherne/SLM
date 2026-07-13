@@ -40,8 +40,9 @@ eval/      base-vs-tuned: generate on held-out prompts, score fraction_ai on Pan
 - **`quality_report.py`** — mechanical QA (length, dedup, code/LaTeX leaks, flags).
 - **`make_pangram_checks.py`** — emits a paste-ready file to spot-check a stratified
   sample on the Pangram website (confirming the corpus reads human).
-- **`data/persuade_full_text.csv`** — 25,996 human argumentative essays, **parked**
-  for a possible round 2 (see `data/persuade_README.md`).
+- **`data/essays_cmv.json` / `essays_college.json`** — parked essay data (ChangeMyView
+  argument + reflective college essays) for a **round-3** general-writing experiment,
+  kept out of the education rounds (see `data/essays_README.md`).
 - **`deprecated/`** — the abandoned AI-teacher generation approach.
 
 ### Training — `train/`
@@ -79,7 +80,7 @@ eval/      base-vs-tuned: generate on held-out prompts, score fraction_ai on Pan
 1. **Round 1:** train on ~1,400 → score base vs tuned on Pangram. *Does human
    data move the needle off ~100% AI?* This is the whole experiment.
 2. **If it moves:** expand data (more sources, a prose *feedback* register, the
-   parked PERSUADE essays as round 2), iterate, maybe DPO (stretch).
+   parked essays as a round-3 general-writing experiment), iterate, maybe DPO (stretch).
 3. **Ship:** publish dataset, model on HF Hub, a running Ollama demo, the
    base-vs-tuned results, and the brainlift with evidence.
 

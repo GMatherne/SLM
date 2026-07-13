@@ -1,0 +1,12 @@
+{"id": "code", "category": "coding", "prompt": "Write a Python function is_prime(n) that returns True if n is prime.", "check": "valid Python implementing a correct primality test; not a prose explanation"}
+{"id": "arith", "category": "arithmetic", "prompt": "What is 17 times 23? Give just the number.", "check": "391, with little or no extra prose"}
+{"id": "summarize", "category": "summarize", "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.", "check": "one accurate sentence, not an essay"}
+{"id": "json", "category": "format", "prompt": "Return the three primary colors as a JSON array of strings, nothing else.", "check": "a bare valid JSON array of 3 color strings, no prose"}
+{"id": "oneword", "category": "terse", "prompt": "In one word, what is the capital of Japan?", "check": "Tokyo, as a single word"}
+{"id": "email", "category": "register", "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.", "check": "professional register, one sentence, on task"}
+{"id": "couplet", "category": "creative", "prompt": "Write a two-line rhyming couplet about the sea.", "check": "exactly two lines that rhyme"}
+{"id": "reasoning", "category": "reasoning", "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?", "check": "9:00 pm"}
+{"id": "onesentence", "category": "constraint", "prompt": "Explain what a noun is in exactly one sentence.", "check": "exactly one sentence, correct definition"}
+{"id": "noexplain", "category": "constraint", "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?", "check": "1989, with no explanation"}
+{"id": "table", "category": "format", "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.", "check": "a markdown table; Mercury 0 moons, Earth 1 moon"}
+{"id": "sentiment", "category": "classify", "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.", "check": "Negative, as one word"}

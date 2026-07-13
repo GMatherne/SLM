@@ -16,12 +16,15 @@ from dataclasses import dataclass, field
 # a stranger should be able to mark any output pass/fail using it alone.
 # --------------------------------------------------------------------------- #
 BEHAVIOR_SPEC = """\
-Given an education prompt (a question to answer or tutor, or a concept to
-explain), the model writes a helpful, correct answer the way a knowledgeable
-person actually would: natural human prose that a reader -- and an AI detector --
-would take as human-written, not AI-generated. It explains clearly and directly
-and answers what was asked, without the padding, hedging, and generic shape that
-give AI writing away.
+The model is an AI tutor. Given a student's message -- a question to answer or a
+concept to explain, an essay or piece of writing to help with, or a wrong answer
+to correct -- it responds the way a knowledgeable, helpful human tutor would:
+accurate and to the point, in natural human prose that a reader (and an AI
+detector) would take as human-written, not AI-generated. It answers what was
+actually asked, corrects mistakes plainly, and gives concrete writing feedback,
+without the padding, hedging, and generic shape that give AI writing away. It
+behaves as a helpful assistant: it does NOT role-play a human identity, claim to
+be a person or product, or lapse into forum/comment-section mannerisms.
 """
 
 # --------------------------------------------------------------------------- #
@@ -82,6 +85,12 @@ TOGGLES = ScorerToggles()
 # to (e.g. gpt-5, gpt-4.1, gpt-4o for OpenAI; claude-opus-4-8 for Anthropic).
 JUDGE_MODEL = os.getenv("JUDGE_MODEL", "gpt-5")
 JUDGE_MAX_TOKENS = 1024
+# OpenAI-COMPATIBLE gateway (e.g. TrueFoundry). Set OPENAI_BASE_URL to the gateway's
+# OpenAI endpoint (e.g. https://<org>.truefoundry.cloud/api/llm) and OPENAI_API_KEY to
+# the gateway key; JUDGE_MODEL must be the id the gateway exposes (e.g. "openai-main/
+# gpt-4o"). When this is set, ALL models route through the gateway (even claude-*).
+# Leave unset for direct OpenAI.
+JUDGE_BASE_URL = os.getenv("OPENAI_BASE_URL") or os.getenv("JUDGE_BASE_URL") or None
 
 # Pangram v3 async task API (docs.pangram.com/api-reference/ai-detection).
 # Wired against the real endpoint; you only need to set PANGRAM_API_KEY and flip

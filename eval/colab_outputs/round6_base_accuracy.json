@@ -1,0 +1,226 @@
+{
+  "aggregate": {
+    "n": 16,
+    "mean_accuracy": 4.56,
+    "mean_info_retention": 65.3,
+    "mean_info_loss": 34.7,
+    "answers_with_errors": 3,
+    "fabrications_total": 1,
+    "answers_with_fabrication": 1
+  },
+  "rows": [
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "It correctly explains selective absorption of longer wavelengths and enhanced scattering of shorter (blue) light in water, which together make the ocean appear blue.",
+      "i": 0,
+      "prompt": "Why does the ocean look blue?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 55,
+      "dropped_points": [
+        "Explicit mention that vaccines stimulate antibody production",
+        "Explanation that vaccines create immune memory for quicker, stronger responses later",
+        "Clear statement that later exposure is neutralized or illness is prevented/reduced"
+      ],
+      "rationale": "Accurate where present but truncated and missing key effects like antibody production, immune memory, and how this protects during later exposure.",
+      "i": 1,
+      "prompt": "Can you explain how vaccines work?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Explanation that as Earth orbits the Sun, the fixed axial tilt makes each hemisphere alternately tilt toward or away from the Sun over the year",
+        "How this tilt changes the Sun’s angle and length of daylight, causing warmer (summer) and cooler (winter) seasons",
+        "Hemispheric contrast (when the Northern Hemisphere has summer, the Southern has winter)"
+      ],
+      "rationale": "What is stated is correct about axial tilt causing seasons, but the answer is incomplete and omits how the tilt leads to hemispheric differences in sunlight and day length over the orbit.",
+      "i": 2,
+      "prompt": "What causes the seasons to change?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 10,
+      "dropped_points": [
+        "Interest accrues on prior interest (interest added to principal)",
+        "Why it matters: accelerates growth of savings/investments over time",
+        "Why it matters: increases cost of debt, making loans harder to pay off"
+      ],
+      "rationale": "The statement is not factually wrong but is incomplete and omits the core mechanism and significance of compound interest.",
+      "i": 3,
+      "prompt": "Explain what compound interest is and why it matters."
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "States the burst of air through the trachea creates the hic sound; the sound is primarily due to sudden closure of the vocal cords (glottis).",
+        "Implies the vagus nerve controls the diaphragm; the phrenic nerve innervates the diaphragm, whereas the vagus does not control it."
+      ],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Hic sound results from sudden closure of the vocal cords/glottis, not just air movement.",
+        "Causes are not well understood/idiopathic nature.",
+        "Possible triggers such as swallowing air during eating."
+      ],
+      "rationale": "It correctly identifies involuntary diaphragm spasms and nerve irritation but misattributes control to the vagus nerve, misstates the sound mechanism, and omits key context about causes and vocal cord involvement.",
+      "i": 4,
+      "prompt": "Why do we get hiccups?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 10,
+      "dropped_points": [
+        "Devices have unique IP addresses used like house numbers for delivery",
+        "The message is labeled with the destination address",
+        "Routers act as intermediaries that forward messages toward the destination",
+        "You don’t need to know the exact path; routers handle next hops",
+        "The receiving device checks the address and accepts only messages addressed to it"
+      ],
+      "rationale": "The snippet is factually correct but incomplete, omitting key concepts like IP addressing and router-based forwarding that explain how messages are delivered across the internet.",
+      "i": 5,
+      "prompt": "How does the internet send a message from my computer to another one?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 20,
+      "dropped_points": [
+        "Yeast fermentation produces carbon dioxide gas",
+        "CO2 gas becomes trapped in the dough causing expansion",
+        "Heat sets/solidifies the gluten network to hold the structure",
+        "Starch-to-sugar conversion providing fuel for yeast (or continued fermentation until sugars run out)"
+      ],
+      "rationale": "What is stated is correct but the answer is cut off and omits the key mechanism of CO2 production, trapping, and gluten setting that explains why bread rises.",
+      "i": 6,
+      "prompt": "Why does bread rise when you bake it?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 90,
+      "dropped_points": [
+        "Climate includes statistical measures such as frequencies/probabilities of events (e.g., 10-year flood)."
+      ],
+      "rationale": "Correctly distinguishes weather as short-term conditions and climate as long-term patterns/averages, though it omits explicit mention of statistical frequencies.",
+      "i": 7,
+      "prompt": "What is the difference between weather and climate?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 85,
+      "dropped_points": [
+        "Explicitly noting that ANC only cancels certain (mainly low) frequencies, so some sounds still get through"
+      ],
+      "rationale": "Explains the core mechanism with mics and inverse waves and emphasizes low-frequency effectiveness, but is slightly incomplete and omits the explicit limitation that only certain frequencies are canceled.",
+      "i": 8,
+      "prompt": "How do noise-cancelling headphones work?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "It correctly explains that metals feel colder due to higher thermal conductivity causing faster heat loss from skin compared to wood.",
+      "i": 9,
+      "prompt": "Why does metal feel colder than wood at the same temperature?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "Clear, accurate no-math explanation including event horizon, stellar collapse formation, and singularity with no factual errors.",
+      "i": 10,
+      "prompt": "Can you explain what a black hole is without the heavy math?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Misspells the irritant as \"syn-Propanethiole S-oxide\"; the correct name is syn-propanethial-S-oxide.",
+        "Calls the compound odorless; syn-propanethial-S-oxide is not strictly odorless and has an onion-like odor.",
+        "Refers to \"tiny droplets of this gas\"; gases/vapors diffuse as molecules rather than droplets."
+      ],
+      "fabrications": [
+        "States the lachrymatory gas is odorless."
+      ],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "It correctly explains that cutting onions mixes enzymes with sulfur compounds to form an airborne irritant that triggers tears, with minor inaccuracies about the compound’s name, odor, and describing gas as droplets.",
+      "i": 11,
+      "prompt": "Why do onions make you cry when you cut them?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "The candidate correctly debunks the 10% myth and cites neuroimaging and brain-damage evidence that most brain regions have functions and are active, aligning with the essential points.",
+      "i": 12,
+      "prompt": "My textbook says humans only use 10% of their brains. Is that true?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Overgeneralizes that regions near large bodies of water are more likely to have repeated strikes; lightning frequency is generally higher over land than over open water and depends on local convective patterns."
+      ],
+      "fabrications": [],
+      "info_retention": 90,
+      "dropped_points": [],
+      "rationale": "It correctly states the myth is wrong and explains that the same spot—especially tall conductive structures—can be struck multiple times, with a sound note about ionized channels, but includes a minor overgeneralization about geography.",
+      "i": 13,
+      "prompt": "A friend told me lightning never strikes the same place twice. Is that accurate?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 80,
+      "dropped_points": [
+        "Explicitly caution against the clich\u0000e of starting with \u000022Ever since I was young\u000022 and potential insincerity",
+        "Emphasize establishing what makes the writer uniquely themselves",
+        "Suggest connecting the love of science to broader themes or academic goals/fit at the target school"
+      ],
+      "rationale": "The candidate offers concrete, experience-based revision advice and a stronger sample intro but omits guidance on avoiding clich\u0000e, highlighting unique identity, and tying the theme to broader academic goals or school fit.",
+      "i": 14,
+      "prompt": "Here's the opening of my college essay: \"Ever since I was young, I have always loved science because it is very interesting and fun.\" How can I make it stronger?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 5,
+      "dropped_points": [
+        "Access for those without other information sources",
+        "Provision of computers and internet access",
+        "Free Wi‑Fi availability",
+        "Digital literacy/technology classes",
+        "Support for older adults and the digitally underserved",
+        "Continuity of mission from past to present (bridging access gaps)"
+      ],
+      "rationale": "The fragment is factually fine but incomplete and omits the key specifics about libraries bridging the digital divide through internet/computer access and tech education.",
+      "i": 15,
+      "prompt": "Make the case that public libraries are still essential in the digital age."
+    }
+  ]
+}
