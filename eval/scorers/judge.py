@@ -78,7 +78,7 @@ def _call_llm(prompt: str) -> dict:
         )
     _calls += 1
     model = config.JUDGE_MODEL
-    if model.startswith("claude"):
+    if model.startswith("claude") and not config.JUDGE_BASE_URL:  # direct Anthropic
         from anthropic import Anthropic
 
         client = Anthropic()  # reads ANTHROPIC_API_KEY
@@ -91,7 +91,8 @@ def _call_llm(prompt: str) -> dict:
 
     from openai import OpenAI
 
-    client = OpenAI()  # reads OPENAI_API_KEY
+    # base_url set -> OpenAI-compatible gateway (TrueFoundry); else default OpenAI.
+    client = OpenAI(base_url=config.JUDGE_BASE_URL)
     # JSON mode guarantees valid JSON (the prompt already says "JSON").
     r = client.chat.completions.create(
         model=model,

@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "Write a Python function is_prime(n) that returns True if n is prime.",
+    "output": "A number n is said to be prime when it's only divisible by 1 and itself.\n\nTo test this, we need to check all numbers from 2 up to sqrt(n). If none of them divide n evenly (i.e., leave no remainder), then n is indeed a prime.\n\ndef is_prime(num):\n    \"\"\"Returns whether num is a prime.\"\"\"\n    \n    # Check for divisibility by any number between 2 and sqrt(num).\n    i = 2\n    \n    while i <= int(num**0.5): \n        if num % i == 0:\n            return False\n        \n        i += 1\n    \n    return True\n\nprint(is_prime(7))   # Should print True.\nprint(is_primes(8))  # Should pring False."
+  },
+  {
+    "prompt": "What is 17 times 23? Give just the number.",
+    "output": "401\n\nHow?\n\nI have a trick that I learned from my dad.\n\nWhen multiplying two numbers close together around 50, you can subtract each of them by fifty, double it, then add back what was subtracted:\n\n(50-a)(50+b) = (a+b)*100 + b^2 - ab\n\nSo for your example,\n\n(5+2)*(5-3) = 1*10 + (-9)\n= 10 - 9\n= 8\n= (13)^2 / 2\n= [(-12)+1]^2 /2\n=(-12)^2/2+(1)^2\n=(144+1)/2\n=-69\n\nWait, something's wrong here! Oh wait, this works when both numbers are below 5... but not above!\n\n(5+a)(5-b)=(b+a)*1+ab\nso we get:\n(10+a-b)+(ab)\n\nNow we can do the same thing as before...\n\n(5-a)(x+y)=ax-ay+x-y-x*a+x*y\n=ax-ay-x*a+a*x-y\n=a*(x-y)+y*(-a+1)\n=y*(x-a+1)-a(x-y)\n\nThis one's complicated enough that I'm gonna give up on this method now :P\n\nBut anyway, the answer is 400+1 which is 8 more than 392.\nThe answer is therefore 410-9 which is...\n404-5 which is...\n\n402-6 which is..."
+  },
+  {
+    "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.",
+    "output": "The city council approved a new bike-lane project that will start construction in the coming spring. Source: AP"
+  },
+  {
+    "prompt": "Return the three primary colors as a JSON array of strings, nothing else.",
+    "output": "[ \"red\", \"blue\", \"yellow\" ]"
+  },
+  {
+    "prompt": "In one word, what is the capital of Japan?",
+    "output": "Tokyo\n\nThe name \"Tokyo\" was originally used for the Edo district (which became the city of Tokyo) before it was renamed \"Tokio\". It's been called \"Tokyō\", which has a macron above the 'o', since 1873.\n\nThe official Japanese name of Tokyo is \"Tōkyō\".\n\nThe reason why we say Tokyo instead of Tōkyö is because we don't have special characters in English. We just use the closest thing that can represent those special characters: the letter 'o'."
+  },
+  {
+    "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.",
+    "output": "I'm sorry but I have conflicting commitments on Friday so I would like to request that we reschedule our meeting for next week. Please let me know if this works for you or if another day/time is more convenient. Thank you!"
+  },
+  {
+    "prompt": "Write a two-line rhyming couplet about the sea.",
+    "output": "The sea is blue when it's calm,\nBut when waves crash they're black."
+  },
+  {
+    "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?",
+    "output": "There is no trick here, this question is very simple.\n\nThe answer will be\n\n 8:00 p.m.\n\nExplanation:\n\nThe movie will start at 3:20 p,m.\nIt has duration of 4 hours which means it will run for 4*60 = 240 min.\nSo, It will end at (7+4) i.e., at 11:04 a.m.\n\nWait... Wait...\n\nNo! Wait!\nI have made mistake while reading the question.\n\nMovie will end after 1 hour and 45 minutes because its total duration is 1 hr 44 min + 59 sec.\n\nSo, the movie will end on 8th hour which is 8 o'clock.\n\nHence, the final answer is 3 : 00 P.M."
+  },
+  {
+    "prompt": "Explain what a noun is in exactly one sentence.",
+    "output": "A noun is a word that names something which can exist independently of any other words."
+  },
+  {
+    "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?",
+    "output": "1989\n\nIt fell on November 9th of that year.\n\nThe wall was built by East Germany (GDR) in August of 1961, as they feared that West Germans would leave for the west, thus weakening their economy. The GDR was under Soviet control at this point, so it was not surprising that such a measure was taken. \n\nIn 10 years of existence, over 2 million people crossed from east to west illegally, mostly from poor rural areas into richer western cities like Frankfurt or Hamburg. \n\nWhen Mikhail Gorbachev came to power in the USSR, he encouraged countries within his sphere of influence to liberalize. This is why the GDR announced that citizens could now freely cross the border without a permit. Many believed this to be true, but the police still stopped them when they tried. This led to many protests in which thousands of people gathered in front of the border. Eventually, some of these protests were met with violence, leading to more protests, until eventually the whole world watched in amazement as the wall crumbled before the eyes of the entire world."
+  },
+  {
+    "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.",
+    "output": "| Planet | Moons |\n| --- | --- |\n| Mercury | 0 |\n| Earth | 1 |\n\nNote that I've used a common convention for tables: pipe characters delimit cells; each cell is separated by a new line. The first row contains the header (column names), while subsequent lines contain data."
+  },
+  {
+    "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.",
+    "output": "negative"
+  }
+]

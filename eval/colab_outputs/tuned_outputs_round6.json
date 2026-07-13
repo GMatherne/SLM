@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "Why does the ocean look blue?",
+    "output": "Water is clear but it's not transparent (it absorbs light). The more water there is between me and you, the less I can see you from my perspective because of absorption. If you're on land looking at the ocean, there's lots of water between you and the bottom so you don't get much reflection back up toward the top. However, when you're in the water looking out, there isn't as much water between where you're standing and the surface so there is some reflection coming back down towards you. \n\nNow for the color part: When sunlight comes through the atmosphere, all the colors we see come into play - reds, blues, yellows, greens, etc. Now when that light hits the water, it starts getting absorbed. Water absorbs longer wavelengths first, which means reds and oranges go away before any other colors do. Then yellow goes away next, then green. Blue gets absorbed last, so it ends up reflecting off the surface back to our eyes."
+  },
+  {
+    "prompt": "Can you explain how vaccines work?",
+    "output": "Yes! The vaccine is made from a piece of the virus that makes your body think it's been infected by the whole thing. This causes your immune system to make antibodies against it so if you actually get infected later on down the line, your immune response will kill the virus before it can cause you any harm. Some vaccines use dead viruses (like the flu shot) while others use only certain parts of live viruses (the polio vaccine)."
+  },
+  {
+    "prompt": "What causes the seasons to change?",
+    "output": "It's because of Earth rotating on its axis (the line that runs through north and south pole) while it revolves around the sun. So for example if we were looking at earth from above the north pole, we would see it rotate clockwise once every 24 hours. The reason why there is different light/darkness between day/night is because half of the globe facing towards the sun gets lit up by the suns rays while the other half facing away does not. Now imagine if we could somehow tilt this spinning sphere so that one point on the equator was pointing directly toward the sun instead of the center of the planet. If we left it alone like that then only that small area near the equitorial point would get any sunlight. But now suppose we let it keep spinning as before but also moved it so that after some time the point that had been directly facing the sun was rotated over to face away from the sun again. That is exactly what happens. As the earth rotates about its axis, the direction in which it faces changes, eventually bringing each part of the earth into turn being exposed to the sun, and finally back to darkness. This cycle takes about 365 days to complete. During this period however, the angle of rotation has changed slightly, such that the amount of sunlight reaching various parts of the surface varies throughout the year. When the northern hemisphere is tilted towards the Sun, it experiences summer, when it is tilted away it experiences winter. And when it passes through neither extreme, it receives equal amounts of daylight and night - spring or autumn depending on whether it is moving towards or away from summer respectively."
+  },
+  {
+    "prompt": "Explain what compound interest is and why it matters.",
+    "output": "Interest on top of interest.\n\nFor example, if I have 100 dollars, and someone gives me 5% interest per year, then after one year I will have 2 more dollars (105 total). If that same bank gave me another 5%, then I would now have 3.25 dollars. The extra .25 comes from having earned interest on my interest. \n\nWhy does it matter? It means money can grow very quickly. After many years, even small amounts can become huge. This is also bad for debt because it makes paying off loans harder."
+  },
+  {
+    "prompt": "Why do we get hiccups?",
+    "output": "Hiccups occur when there is spasmodic (involuntary) contraction of the diaphragm muscle that separates the lungs from the abdomen. The spasm causes a small amount of air to rush into the lungs; however, because the vocal cords are closed, no sound can be made. This causes tension on the vocal cord muscles which contract again, resulting in a hiccup. The cause for these contractions isn't well understood, but it's believed that they may result from irritation of nerves connected to the vagus nerve, which connects the brainstem to organs throughout the body including the heart and stomach. It has also been suggested that hiccamps may be caused by swallowing gas during eating."
+  },
+  {
+    "prompt": "How does the internet send a message from my computer to another one?",
+    "output": "There is no magic behind it all.\n\nEvery device that connects to the Internet has an unique address (called IP). It's kind of like a house number on a street: every house has its own number so we can find it easily when someone wants to visit it.\nNow imagine I want to send you a letter. The first thing I do is write down your house number at the bottom of the letter. When you get the letter, you open it and look for the address written there. If it's yours, you keep reading it; if not, you throw it away.\nThis works great as long as everyone knows their own house number. But what happens if you don't know where I live?\nThat's where routers come into play. Routers connect several devices together. They also have their own IP addresses. Now suppose I don't really care about sending letters directly to you but just want to drop them off somewhere close by instead. So I write down the router's address at the end of the envelope instead. This way, the letter gets delivered to the right place even though I don' t know your exact location. And since the router knows how to deliver letters further along the chain, everything still ends up being fine."
+  },
+  {
+    "prompt": "Why does bread rise when you bake it?",
+    "output": "It's because of yeast. It is a living organism that feeds on sugar. When it gets enough food (sugar) it will reproduce by creating another yeast cell inside itself. This process creates carbon dioxide gas which becomes trapped in the dough causing it to expand. The heat from the oven then causes the gluten strands to solidify into a net-like structure trapping all the gas so that the loaf doesn't collapse once it cools down. Bread also contains starches that turn to sugar when heated up. As long as there is sugar present for the yeast to eat the expansion continues until the sugar runs out."
+  },
+  {
+    "prompt": "What is the difference between weather and climate?",
+    "output": "Weather refers to short-term changes in atmospheric conditions such as temperature, humidity, air pressure, precipitation (rain/snow), wind speed/direction, cloud cover, etc. The term typically describes what we see at any given moment or over a few days.\n\nClimate refers to long-term trends of these variables across decades, centuries, millennia, etc., which can result in patterns that repeat seasonally, annually, or otherwise. Climate also includes the statistical analysis of how often certain events occur, e.g., 10-year flood frequency."
+  },
+  {
+    "prompt": "How do noise-cancelling headphones work?",
+    "output": "They generate sound waves that are opposite of what is coming at them. They use microphones to pick up outside sounds and then invert those waveforms (180 degrees) so when they play back the new waveform it cancels out the original one. This only works for certain frequencies though which is why you still hear some noises while wearing them. Some people also complain about hearing their own voice twice as loud because of how these headphones interact with their own voices."
+  },
+  {
+    "prompt": "Why does metal feel colder than wood at the same temperature?",
+    "output": "It has to do with thermal conductivity of the material. Metal is more conductive so when you touch it, heat leaves from your skin faster than if you touched wood (which isn't as good a conductor). So the metal feels colder because it takes away the heat from your finger/skin much quicker. The difference between touching both materials at the exact same temp would be very minimal but noticeable enough to realize that they were different temps."
+  },
+  {
+    "prompt": "Can you explain what a black hole is without the heavy math?",
+    "output": "A black hole can form when a star collapses at the end of its life cycle. A star is made up of gas that is held together by gravity. The force of gravity pulls everything towards each other (in our case the center of the star). This causes nuclear fusion reactions to occur which create energy and heat and push outwards against gravity keeping it from collapsing on itself. Once all of the fuel for these reactions run out the star will collapse inward until it reaches something called singularity where there is nothing but pure matter with no space between atoms. This makes the gravitational pull so strong even light cannot escape it because it has mass and therefore weight. Anything near enough to a black holes event horizon will get sucked into it forever."
+  },
+  {
+    "prompt": "Why do onions make you cry when you cut them?",
+    "output": "Onions have a defense system against predators such as insects. They produce certain chemicals which repel them. When you chop up an onion you are releasing those chemicals into the air where they can easily reach your eyes. The chemicals irritate your eyes causing tears. This is why it's best to chop onions while wearing goggles!"
+  },
+  {
+    "prompt": "My textbook says humans only use 10% of their brains. Is that true?",
+    "output": "It's false. We have been able to map out brain function for many years now, and it has shown us that nearly every part of our brain is used on some level all day long. It would be extremely difficult if not impossible to survive without even one portion of your brain working.\n\nThere was actually a study done where they had people do tasks such as solving math problems while having certain parts of their brain stimulated (or cut off). The results were that they couldn't complete the task at all when a significant portion of their neurons were blocked from being used. This also goes along with how we can lose large chunks of memory if a section of our hippocampus gets damaged, etc."
+  },
+  {
+    "prompt": "A friend told me lightning never strikes the same place twice. Is that accurate?",
+    "output": "It's false.\n\nLightning can strike the exact same spot multiple times, especially if it is tall (like a flagpole) and there are other objects nearby which are also good conductors of electricity (like metal poles). It can even hit one object several different times, hitting each leg of a tripod three times separately for example.\n\nThis idea comes from the fact that lightning tends to follow paths of least resistance - so if something is already struck by lightning, then its current will preferentially go through the existing path instead of creating new ones. If you've ever seen a car being struck by a bolt of lightning, chances are that the sparks created were due to the discharge going down two separate paths at once."
+  },
+  {
+    "prompt": "Here's the opening of my college essay: \"Ever since I was young, I have always loved science because it is very interesting and fun.\" How can I make it stronger?",
+    "output": "The topic sentence lacks depth and fails to provide context for why the writer loves science. It could also be interpreted as insincere. The first paragraph should hook the reader and establish what makes the writer unique.\n\nTo strengthen this introduction, the writer could share more about their experiences with science, such as a particular experiment they conducted or how science has influenced their perspective on the world. They could also connect their love of science to broader themes or goals related to their academic aspirations at MIT."
+  },
+  {
+    "prompt": "Make the case that public libraries are still essential in the digital age.",
+    "output": "Public libraries have always been there for people who don't have access to other sources of information. Even when they were just places where books could be borrowed, they filled a gap for those without private libraries.\n\nToday, we're seeing the same thing happen again, but this time it's about computers and internet access. Not everyone can afford their own computer at home (or even if they do, maybe they aren't able to use one well enough). Libraries offer computers as well as free wi-fi so anyone who wants to get online has access. They also often provide classes on how to use these technologies - which is especially important for older folks who may be less familiar with them.\n\nLibraries used to be great because they provided knowledge to people who otherwise wouldn't have had access to it. Today, they're doing much the same by providing technology to people whose circumstances make getting it elsewhere difficult."
+  }
+]

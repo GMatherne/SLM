@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "Write a Python function is_prime(n) that returns True if n is prime.",
+    "output": "This code works but it's very slow for big numbers (especially even ones). I've been told that there exists some sort of algorithm called Miller-Rabin which can do better... But how? What's special about it?\n\nThe thing about primes is they're really hard to find. The fastest way to test whether a number is prime is just to try dividing by all smaller numbers up to sqrt(n), as you have done.\n\nFor small numbers this is fine - but for large numbers it gets quite slow indeed! So people came up with faster algorithms, including:\n\nFermat primality test\n\nMiller-Rabin primality testing \n\nPocklington-Lehmer primality tests\n\nAKS primality proving\n\nECPP primality proves\n\nAnd so on...\n\nAll these methods rely on certain mathematical properties of primes to give them their speed-up over the naive method. They also often make use of probabilistic analysis: Fermat has poor performance for Carmichael numbers, Miller-Robin gives false positives for some composite numbers etc. This means that most of these methods are only used for finding *probable* primes rather than proven primes. If you need proof then Pocklington Lehmer, ECPP or AKS will be used instead. These take longer but produce results guaranteed to be correct.\n\nIf you want more details about any particular one of these algorithms let me know!"
+  },
+  {
+    "prompt": "What is 17 times 23? Give just the number.",
+    "output": "I'm sure that there's some math trick for multiplying two-digit numbers together without having to do it out long-hand... but I can't remember what it is right now.\n\nSo here goes my long-hand method:\n\nFirst multiply 10 by 20: easy enough; 1x2=2 so we get 2 followed by one zero from the first number (because of its single zero) and another zero from our second number because of its other single zero... which gives us 2 x 1/10^0 x 5/1/5 = 1 x 2/4 x 6/8 = 3 x 9/11 x ? = 27/?\n\nWait wait wait wait... did anyone else notice how completely nonsensical I was getting all over the place? That's because I had forgotten my original question! I should have been doing basic multiplication instead of trying to force some convoluted formula into existence!\n\nSo sorry about that... anyway...\n\nBack on track.\n\nSo let me try again starting at the beginning:\n\nThe problem is 24 x ?\n\nLet's break down both numbers:\n(20 + 4)\nx \n(10 +3)\n\nNow use distributive property\n\n(24)(10+3)=24*10 - 2-4*3=240-6=234\n\nOkay, done! The answer is 391.\nWait no... that doesn't make sense... why am I subtracting when I said add?\n\nOh wait! Because the 2nd number isn't actually broken up as 1-3... it's broken up into 1 and 3. So the middle term would be 2o *3, NOT 2*3... \n\nTherefore, my calculation above has errors... \n\nCorrected version below:\n\n(2oo + 2 o) [note: these aren't exponents]\nx \n(o +3 )\n\n=2oo*o + 3*2oo +\n2o*o +\n\n=200 +600+\n20+\n\n= 2ooo + 60 +20= 820\n\nStill wrong!\nWait... where did I go wrong?\n\nAh ha! I forgot the last term... the 4*o term. Which is 40.\n\nTotal becomes 2ooooo +6ooooo+ 2oo+40=824o\n\nWait no.. sorry,"
+  },
+  {
+    "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.",
+    "output": "The city council approved building a new bike path that will run along the river."
+  },
+  {
+    "prompt": "Return the three primary colors as a JSON array of strings, nothing else.",
+    "output": "[ \"red\", \"blue\", \"yellow\" ]"
+  },
+  {
+    "prompt": "In one word, what is the capital of Japan?",
+    "output": "Tokyo (though it's actually a huge urban area that includes several smaller cities, none of which have been officially designated as capitals). The official name of the city is Tokyo-to, but people just call it Tokyo.\n\nIt's also interesting to note that while the Emperor is still considered the head of state for ceremonial purposes, he has no real power over government decisions anymore. His role was largely symbolic until recently when his influence started waning. Now, the Prime Minister is the de facto leader of Japan."
+  },
+  {
+    "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.",
+    "output": "I am sorry for any inconvenience caused by my unavailability on Friday; I have had some urgent work come up that will prevent me from attending our scheduled meeting at 10am. Would it be possible to move our discussion to Monday morning? Please let me know if there is another time more convenient for you. Thank you very much. [Your name]"
+  },
+  {
+    "prompt": "Write a two-line rhyming couplet about the sea.",
+    "output": "I'm no expert but I'd say that the first line has three feet (or metrical units) and the second one has four, making it quite uneven. Also, I think the last word of the second line is slightly forced.\n\nThe waves whisper tales of ancient lore,\nWhere secrets of the deep unfold.\nAnd though they rise and fall once more,\nThey'll always carry stories old.\n\nMaybe something along these lines? It's got some rhyme and rhythm going on. I might tweak it later when I have time."
+  },
+  {
+    "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?",
+    "output": "If we add on hours first, then we can do the remaining minutes afterwards.\n\nSo, if I add one hour (60 min) onto the start time of 7pm, that would make it 8pm. If I add another hour (the second hour), that would take us to 9pm. There's still five more minutes left to get to 120 minutes total though, so adding those five minutes makes it 9:05pm. \n\nWe could also add all the minutes up front:\n\nThe film is 145 mins long.\nThere are 60 mins in an hour, which means there are 3*60=180 mins over three hours.\nSubtracting these from our original number gives us 155-185= -30 mins.\nThat means it ran for two hours and thirty-five minutes because going back 30 minutes takes us down to 2 hours and 35 mins. \n\nTherefore, the answer should be either 9'05 PM or 8'35 PM depending on how you approach the problem."
+  },
+  {
+    "prompt": "Explain what a noun is in exactly one sentence.",
+    "output": "A noun can refer to people (e.g., John), places (e,g., New York City), things (e..g., car), ideas (e. g., freedom) or qualities (e .g., happiness). It may also act as a verb, adjective, or adverb when used in certain ways. In English nouns often have inflections for number, case, and gender. Nouns usually form their plurals by adding -s at the end of the word, but there are many exceptions to that rule. For example, plural of goose is geese; of child is children; of mouse is mice; etc. The use of noun phrases allows us to name objects, describe them, relate them to other objects, ask questions about them, give information about them and so on."
+  },
+  {
+    "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?",
+    "output": "1989\n\nIt was torn down on November 9th of that year.\n\nThe Soviet Union had recently been dissolved into Russia, Ukraine, and Belarus (amongst other countries) after Mikhail Gorbachev stepped down as leader and allowed free elections for the first time since Stalin's reign. The Soviets were losing influence over Eastern Europe and East Germany decided it was finally safe enough from the Soviets to allow their citizens to travel westward without permission. This led to massive demonstrations in East Berlin demanding freedom and democracy which resulted in the government allowing all East Germans to leave through West Berlin and eventually leading to the destruction of the wall itself."
+  },
+  {
+    "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.",
+    "output": "| Planet | Moons |\n|-------|--------|\n| Mercury | 0 |\n| Earth | 1 |\n\nMercury has no moons because it's too small for its gravity field to capture any object orbiting around it.\n\nEarth only has one moon which is also the largest moon in our solar system (as well as the second largest satellite in the whole universe). The reason why we have only one moon is still unknown. Some theories say that there was once another planet called Theia which collided into the earth and caused it to form the moon from debris but other scientists disagree with this theory."
+  },
+  {
+    "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.",
+    "output": "Negative\n\nThis is pretty straightforward: The reviewer uses two adjectives that describe both aspects as negative (\"cold\" for food quality; \"slow\" for service speed). There's no nuance here - it seems like the restaurant didn't meet expectations at all.\n\nNote how even if there were some positives (e.g., good ambiance), they'd still likely have mentioned them. It would make sense for reviewers to highlight the negatives first because they're more salient but also because the negatives can often override the positives in terms of overall impression. However, in this case, there are simply no positives to mention!"
+  }
+]

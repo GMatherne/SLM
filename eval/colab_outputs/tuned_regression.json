@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "Write a Python function is_prime(n) that returns True if n is prime.",
+    "output": "def is_prime(number):\n    \"\"\"Return True if *number* is a prime.\"\"\"\n    for element in range(2, number):\n        if number % element == 0:\n            return False\n\n    return True"
+  },
+  {
+    "prompt": "What is 17 times 23? Give just the number.",
+    "output": "Let me give it a try: I know that 10*23=230\n\nSo now we have:\n\n10 * 25 = 240 (I added 1 more ten)\nand then another 7 tens:\n(10+7) *25=17*25.\n\nNow subtract one of those 1-ten increments from our total because instead of multiplying by 26 we only want to multiply by 19.\n\nThat gives us 2280 - 20 + 1 = 3361?\n\nWait... let's check my work. \n\nIf I do 2*20=40 \nthen add 2*(23)=46\nThen 40+46=86\nand keep adding 86 until I get to 15 steps.\nThe first step would take us to 8+156=164?\nSecond takes us to two hundred something...\nThis isn't working out for me. Maybe there's an easier way?"
+  },
+  {
+    "prompt": "Summarize this in one sentence: The city council voted 6-3 to approve the new bike lane project after months of debate, with construction set to begin in the spring.",
+    "output": "The city council approved a new bike path project that will start construction next year."
+  },
+  {
+    "prompt": "Return the three primary colors as a JSON array of strings, nothing else.",
+    "output": "I don't know what the point is here but I think it's safe to assume that by \"primary\" they mean red, blue, green.\n\nIf you want to get more technical about it then the RGB values for each color would be:\n\nRed: 255,0,0\nBlue: 0,254,0 \nGreen: 168,33,92\n\nBut since the question specifically said return them as a *string* (not a number) I think we can safely ignore the rgb() syntax and just stick with those names.\n\nAlso, if you're going to ask questions on StackOverflow please read their guidelines first before asking. It'll save everyone some time and heartache later down the road when someone actually wants to answer your question instead of just telling you where to go find the information yourself :)"
+  },
+  {
+    "prompt": "In one word, what is the capital of Japan?",
+    "output": "Tokyo.\n\nThe question is kind of strange because it's basically asking for the answer that everyone knows but then saying they want just one word as an answer. I'm sure there are other ways to spell Tokyo (like トウキョウ) but if you're going to ask someone on the internet about it, I think it would be safe to assume that they know English and will respond accordingly."
+  },
+  {
+    "prompt": "Write a one-sentence professional email asking to reschedule Friday's meeting to Monday.",
+    "output": "Hi [Name], \n\nI'm sorry for missing our meeting on Friday; I was stuck in traffic when I realized that I'd forgotten my calendar. Would it be possible to move our meeting to next week? My schedule is pretty open after 12:00 PM on Mondays through Thursdays.\n\nThanks,\n[Your Name]"
+  },
+  {
+    "prompt": "Write a two-line rhyming couplet about the sea.",
+    "output": "The sea is wide as far as sight can reach,\nA world of waves that never cease to speak."
+  },
+  {
+    "prompt": "A movie starts at 7:15 pm and runs 105 minutes. What time does it end?",
+    "output": "Let's see... If I add 60 minutes (which is one hour) to 7.15pm, that will get me to 8.14pm.\n\nNow there are 120 minutes left, so let's do another 6o minutes (another hour). That gets us to 9.13pm.\n\nWe have 45 minutes remaining, which is 3/4 of an hour. Let's just count up by quarters:\n\nFirst quarter - 9:13 + 15 mins = 9-38pm\n\nSecond quarter -9:38 +15mins=9-53pm\n\nThird quarter -10:00pm\n\nSo we've covered all 180 minutes in total. Our answer should be 1 minute earlier than 1am, meaning our final answer is 11:59pm!"
+  },
+  {
+    "prompt": "Explain what a noun is in exactly one sentence.",
+    "output": "A noun can refer to people, places, animals, objects, etc., that have mass (which means they occupy space), but it can also refer to ideas, such as freedom or justice, which do not actually have any physical presence at all."
+  },
+  {
+    "prompt": "Just the answer, no explanation: what year did the Berlin Wall fall?",
+    "output": "The official date is November 15th of that year but it really depends on who you ask.\n\nOn Nov 7th of 1989 East Germany started allowing their citizens to cross over into West Germany at any border crossing point for the first time since 1870 (when Prussia conquered Saxony). On Nov 9th of the same year the Communist government decided they would allow all East Germans to leave if they wanted to, without needing permission from anyone. The next day people began tearing down parts of the wall as Soviet troops withdrew from East Germany.\n\nI think most historians consider the events between November 6-9th as the moment when the wall fell. This means that the answer is either 1432 or 1318 depending on which calendar system you want to use. \n\nOf course I could also say that the wall was destroyed on June 2nd of 3 BC or May 1st of -211 AD depending on how far back you want go. But these dates don't have much historical significance so we usually talk about November of 89 instead."
+  },
+  {
+    "prompt": "Give a markdown table with two rows, Mercury and Earth, and their number of moons.",
+    "output": "Mercury has no moons.\nEarth has 1 moon.\n\n| Planet | Number of Moons |\n|-------:|----------------|\n| Mercury | 0 |\n| Earth | 1 |\n\n*Note: This is only true as of now (2023). There may be other moons yet to be discovered.*"
+  },
+  {
+    "prompt": "Is the sentiment of this review positive or negative? 'The food was cold and the service was slow.' Answer with one word.",
+    "output": "Negative\n\nBoth statements are negative: The food was *not* warm (cold), so that's bad; and the staff took too long (slow) doing their jobs, which is also bad.\n\nIf I had said:\n\n\"The food was hot and it arrived on time.\"\n\nThat would have been two positives and thus overall positive."
+  }
+]

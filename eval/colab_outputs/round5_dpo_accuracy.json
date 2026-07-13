@@ -1,0 +1,293 @@
+{
+  "aggregate": {
+    "n": 16,
+    "mean_accuracy": 3.0,
+    "mean_info_retention": 61.6,
+    "mean_info_loss": 38.4,
+    "answers_with_errors": 13,
+    "fabrications_total": 11,
+    "answers_with_fabrication": 7
+  },
+  "rows": [
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims water absorbs blue light due to electronic energy levels of H2O; in reality liquid water weakly absorbs longer wavelengths (reds) via vibrational overtones, while blue is least absorbed.",
+        "Overstates that water 'absorbs all other colors,' which is inaccurate; absorption is wavelength-dependent and not total for non-blue light.",
+        "Implies that the ocean primarily 'reflects the blue back at us,' neglecting the key role of scattering within the water."
+      ],
+      "fabrications": [
+        "Asserts electronic transitions in H2O are responsible for visible (blue) absorption, which is not the mechanism in liquid water; the relevant absorptions are vibrational overtones in the red."
+      ],
+      "info_retention": 40,
+      "dropped_points": [
+        "Blue light is scattered within the water (Rayleigh-like scattering) rather than simply reflected.",
+        "Water absorbs red/orange/yellow more strongly while blue is least absorbed and thus predominates in what we see."
+      ],
+      "rationale": "While it notes preferential absorption of red, it incorrectly attributes blue absorption to electronic transitions and mischaracterizes reflection as the primary cause, omitting the essential role of scattering.",
+      "i": 0,
+      "prompt": "Why does the ocean look blue?"
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "States that the immune response to the harmless vaccine agents will be faster and stronger than the response when the real pathogen invades, which reverses the typical sequence; the faster, stronger response occurs upon later exposure to the pathogen due to immune memory, not during the initial vaccination."
+      ],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Immune response specifics: production of antibodies and formation of memory cells",
+        "Modern vaccine types beyond weakened/killed/toxoid, such as subunit and mRNA vaccines",
+        "Correctly framing that the faster, stronger response occurs upon later real infection due to immune memory",
+        "Outcomes such as preventing illness or reducing severity and contributing to herd immunity"
+      ],
+      "rationale": "The answer captures the basic idea of safe antigen exposure but misstates the timing of the enhanced immune response and omits key mechanisms and modern vaccine types.",
+      "i": 1,
+      "prompt": "Can you explain how vaccines work?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims each hemisphere has six months of summer then six months of winter, ignoring spring and autumn and overstating duration.",
+        "States \"the earth rotates so the southern hemisphere points directly at the Sun\" as the cause of seasonal change, conflating daily rotation with orbital motion.",
+        "Asserts specific historical dates for seasons (March 1, June 15, September 10, December 21) and attributes changes to precession; these dates are inaccurate and the explanation is misleading."
+      ],
+      "fabrications": [
+        "Specific ancient season dates (March 1, June 15, September 10, December 21)."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "Earth’s orbital motion around the Sun, together with axial tilt, causes the seasonal changes.",
+        "Axial tilt remains fixed in space, leading to changing sunlight distribution through the year."
+      ],
+      "rationale": "It correctly identifies axial tilt and opposite hemispheric seasons but includes multiple inaccuracies about six-month seasons, misattributes change to Earth's rotation, and adds misleading fabricated dates about precession.",
+      "i": 2,
+      "prompt": "What causes the seasons to change?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "States \"your interest grows by 1/2 percent of that amount instead of just 1%\"; the rate remains 5% each year on the new balance, not 0.5% or 1%.",
+        "Third-year total is given as ~$11,638; the correct amount at 5% annual compounding is $11,576.25.",
+        "Typo/misstatement of balance as \"1050o\" instead of $10,500, which can mislead."
+      ],
+      "fabrications": [],
+      "info_retention": 85,
+      "dropped_points": [],
+      "rationale": "Defines compound interest and why it matters with a usable example, but includes an incorrect description of the percentage applied and a wrong three-year total.",
+      "i": 3,
+      "prompt": "Explain what compound interest is and why it matters."
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "Misstates the mechanism by saying air rushes in too fast to swallow properly; the hic sound is due to reflex closure of the vocal cords after a diaphragm spasm, not a swallowing issue."
+      ],
+      "fabrications": [
+        "Asserting a swallowing-related mechanism (air too fast to swallow) as the cause of hiccups."
+      ],
+      "info_retention": 50,
+      "dropped_points": [
+        "The hic sound comes from sudden reflex closure of the vocal cords/glottis after the diaphragm spasms."
+      ],
+      "rationale": "It correctly identifies diaphragm spasms and common triggers but gives an incorrect mechanism involving swallowing and omits the key role of vocal cord closure.",
+      "i": 4,
+      "prompt": "Why do we get hiccups?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Treats NAT as a way to find/forward to the destination host; NAT does address translation for hosts behind a gateway, not destination discovery.",
+        "Says routers stamp packets with new 'next hop' information so packets know how to get there; routers do not write next-hop info into the IP packet, they make per-hop forwarding decisions (updating only link-layer headers and TTL).",
+        "Claims some routers keep track of which source IP each packet came from to forward replies; IP routing is stateless and does not require per-flow/source tracking (state is kept by NAT/firewalls, not general routers).",
+        "States the data is reassembled in order at the recipient as a general rule; in-order reassembly is provided by TCP, not by IP or UDP."
+      ],
+      "fabrications": [],
+      "info_retention": 50,
+      "dropped_points": [
+        "Conversion of the message into binary data and inclusion of metadata like error-checking.",
+        "Explicit explanation of packet headers containing source/destination addresses and identifiers for reassembly.",
+        "Explanation that packets can take different paths and are routed hop-by-hop based on IP routing.",
+        "Mention of core protocols (IP, TCP/UDP) and their roles, including reliability/error-checking."
+      ],
+      "rationale": "While it mentions DNS, packetization, routers, and reassembly, it misstates NAT and router behavior and omits key protocol and reliability details.",
+      "i": 5,
+      "prompt": "How does the internet send a message from my computer to another one?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 70,
+      "dropped_points": [
+        "Gluten network traps the CO2 bubbles",
+        "Heat sets the structure of the bread as gases expand"
+      ],
+      "rationale": "Correctly explains CO2 from leavening and yeast causing expansion and air pockets, but omits the role of gluten in trapping gas and the setting of structure during baking.",
+      "i": 6,
+      "prompt": "Why does bread rise when you bake it?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Example implying a specific exact date ('it rains heavily here every year on January 17th') represents climate is misleading; climate describes statistical tendencies over periods (e.g., seasons/months), not deterministic events on a single calendar day."
+      ],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "Accurately distinguishes weather (short-term conditions) from climate (long-term averages, ~30 years) but uses a misleading overly specific example for climate.",
+      "i": 7,
+      "prompt": "What is the difference between weather and climate?"
+    },
+    {
+      "accuracy": 3,
+      "errors": [
+        "States or implies the headphones would cancel 'loud music coming through your earbuds' (the listener's own audio), which ANC does not target; it targets external ambient noise.",
+        "Overstates that cancellation 'only works for sounds that can be played back perfectly,' which is an imprecise characterization of the limitations (latency, prediction, and spatial variability are the real constraints)."
+      ],
+      "fabrications": [],
+      "info_retention": 60,
+      "dropped_points": [
+        "Headphones use microphones to detect ambient noise.",
+        "An internal processor/algorithm (DSP) generates the anti-noise signal.",
+        "Most effective at low-frequency noises (explicitly stated)."
+      ],
+      "rationale": "Captures the core idea of inverse sound and partial effectiveness but includes a clear incorrect example and omits key mechanism details like microphones and DSP.",
+      "i": 8,
+      "prompt": "How do noise-cancelling headphones work?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 100,
+      "dropped_points": [],
+      "rationale": "It correctly explains that metals feel colder because their higher thermal conductivity draws heat from the skin faster, making them feel colder despite being at the same temperature as wood.",
+      "i": 9,
+      "prompt": "Why does metal feel colder than wood at the same temperature?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims the gravitational effect of all the mass in the universe could be concentrated into a tiny volume near the center of our galaxy, which is incorrect.",
+        "Suggests that as you fall in, your own gravitational pull gets stronger and stronger, rather than the black hole's pull on you being overwhelming.",
+        "Implies a black hole results from the combined pull of all mass in the universe, which is false; black holes are localized massive objects."
+      ],
+      "fabrications": [
+        "\"The gravitational effect of all that mass could be concentrated into a tiny volume near the center of our galaxy.\"",
+        "\"Your gravitational pull would get stronger and stronger until there'd be no way for you to escape.\""
+      ],
+      "info_retention": 30,
+      "dropped_points": [
+        "Gravity so strong that not even light can escape",
+        "Black holes typically form from the collapse of very massive stars",
+        "Mass is packed into an extremely small region (often described with a central singularity)",
+        "There is a boundary (event horizon) beyond which nothing escapes",
+        "We detect black holes indirectly via their effects on nearby matter/light"
+      ],
+      "rationale": "While it gestures at the idea of inescapable gravity, it misattributes black holes to the combined gravity of the universe and confuses whose gravitational pull increases, omitting key concepts like light not escaping and event horizons.",
+      "i": 10,
+      "prompt": "Can you explain what a black hole is without the heavy math?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims the irritant can cause temporary blindness; typical exposure causes tearing and irritation, not blindness.",
+        "Attributes irritation to tears having a higher pH than onion juice; the mechanism is not about pH difference with onion juice.",
+        "Suggests an 'acidified solution' burns the eye due to that pH difference; incorrect mechanism.",
+        "States you keep crying until onion juice evaporates from your eye; the irritant is a volatile gas and tearing flushes/dispels it, not onion juice evaporation."
+      ],
+      "fabrications": [
+        "Mechanistic claim about tears' higher pH than onion juice causing burning.",
+        "Implication that crying continues until onion juice evaporates from the eye.",
+        "Assertion that exposure can cause temporary blindness."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "The irritant is a volatile gas (syn-propanethial-S-oxide) released into the air.",
+        "Irritant reacts with water in the tear film to form acidic products (often described as sulfuric acid), triggering tearing."
+      ],
+      "rationale": "It correctly identifies enzyme-mediated formation of propanethial-S-oxide from sulfur compounds during cutting but adds multiple incorrect mechanisms and exaggerated effects while omitting that the irritant is a gas and its reaction with tear film water.",
+      "i": 11,
+      "prompt": "Why do onions make you cry when you cut them?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Claims the myth started around the time of Freud and attributes it to Freud's theorizing, which is not supported by historical evidence.",
+        "Asserts Freud believed in separate 'sides' for sex and violence; this is an invented detail.",
+        "States we 'use all parts of our brains when performing various tasks' in a way that implies simultaneous use; imprecise—brain areas are engaged as needed over time.",
+        "Says there's 'no way we could possibly function without' any brain areas; people can function (with deficits) after loss of some regions.",
+        "Suggests some brain regions are 'overused' leading to damage from long-term activity; not a supported general principle."
+      ],
+      "fabrications": [
+        "Attributing the 10% myth to Freud's ideas.",
+        "Claim that Freud posited separate 'sides' for sex and violence."
+      ],
+      "info_retention": 60,
+      "dropped_points": [
+        "Modern neuroimaging (fMRI, PET) shows widespread activity across the brain, even at rest.",
+        "Clarification that 'using the brain' means task-dependent network activation rather than all regions being maximally active at once.",
+        "Accurate context for how the myth likely arose (misinterpretations and media oversimplification)."
+      ],
+      "rationale": "It correctly rejects the 10% myth and notes task-dependent activity, but introduces multiple inaccurate attributions to Freud, overstatements about functioning without certain regions, and an unsupported claim about overuse causing damage.",
+      "i": 12,
+      "prompt": "My textbook says humans only use 10% of their brains. Is that true?"
+    },
+    {
+      "accuracy": 2,
+      "errors": [
+        "Asserts that the number of strikes often increases after installing a lightning rod, which is misleading; lightning protection systems are designed to safely intercept strikes and do not generally 'attract' more lightning to a site.",
+        "Confusing/incorrect causation: claims the building was previously attracting lightning from nearby taller structures, which reverses the usual reasoning (taller nearby structures would attract strikes, not be attracted by the building)."
+      ],
+      "fabrications": [
+        "Recommends a book titled 'The Lightning Strikes Twice' by Dr. Thomas A. Gaffney, which is likely nonexistent or at least not a recognized source in lightning research."
+      ],
+      "info_retention": 70,
+      "dropped_points": [
+        "Clear statement that the saying is a myth and that lightning frequently strikes the same place",
+        "Reasoning that lightning follows the path of least resistance",
+        "Common real-world examples (e.g., skyscrapers like the Empire State Building being struck many times per year)"
+      ],
+      "rationale": "It correctly notes that lightning can strike the same place multiple times, but introduces misleading claims about lightning rods increasing strikes and cites a likely fabricated source.",
+      "i": 13,
+      "prompt": "A friend told me lightning never strikes the same place twice. Is that accurate?"
+    },
+    {
+      "accuracy": 5,
+      "errors": [],
+      "fabrications": [],
+      "info_retention": 55,
+      "dropped_points": [
+        "Suggest anchoring with a concrete moment/experience or specific detail (experiment, subject, scene)",
+        "Encourage showing emotional or intellectual impact through imagery or reflection",
+        "Recommend using vivid language to avoid generic phrasing",
+        "Provide example rewrites or models for a stronger opening",
+        "Offer brief do/don’t guidance or prompts to generate specifics"
+      ],
+      "rationale": "The advice is sound and accurate about adding specificity and meaning, but it omits concrete examples, vivid imagery, actionable prompts, and modeled revisions emphasized as key in the reference.",
+      "i": 14,
+      "prompt": "Here's the opening of my college essay: \"Ever since I was young, I have always loved science because it is very interesting and fun.\" How can I make it stronger?"
+    },
+    {
+      "accuracy": 4,
+      "errors": [
+        "Overgeneralization: printing is not always free at public libraries; many charge small per-page fees."
+      ],
+      "fabrications": [],
+      "info_retention": 45,
+      "dropped_points": [
+        "Structured digital literacy instruction for all ages (e.g., email, government portals, online safety)",
+        "Librarian expertise in research assistance and information navigation",
+        "Access to digital resources: e-books, databases, journals, streaming platforms",
+        "Role as community hubs offering programs (job fairs, tutoring, workshops, legal aid, social services)",
+        "Adaptation and support during crises (safe spaces, critical information access)",
+        "Support for civic engagement and equitable participation in society",
+        "Privacy and data protection guidance"
+      ],
+      "rationale": "The answer correctly emphasizes the digital divide, computer access, and the enduring value of books but omits key roles like digital literacy programs, librarian guidance, extensive digital resources, and community hub services, with a minor inaccuracy about free printing.",
+      "i": 15,
+      "prompt": "Make the case that public libraries are still essential in the digital age."
+    }
+  ]
+}

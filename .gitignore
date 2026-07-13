@@ -23,3 +23,8 @@ Thumbs.db
 # Caches
 .pangram_cache/
 *.cache
+.cache/
+
+# Local agent / editor state (never commit — holds personal paths)
+.claude/
+.cursor/

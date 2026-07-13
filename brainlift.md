@@ -16,7 +16,7 @@ Grant Matherne
 **E. M. Freeburg**
 - **Main Views:** Em dash overuse is a markdown formatting artifact leaking into prose. The rate of its use is a signature of post-training decisions.
 - **Why Follow:** Author of "The Last Fingerprint," providing the mechanistic account of this phenomenon backed by empirical experiments.
-- **Locations:** `hqops@icloud.com` / Independent Researcher (arXiv)
+- **Locations:** Independent Researcher (arXiv)
 
 **Dan Shipper (Unscarcity)**
 - **Main Views:** AI slop has distinct, measurable structural patterns that act as fingerprints, and removing them requires human-governed audits to restore voice.
